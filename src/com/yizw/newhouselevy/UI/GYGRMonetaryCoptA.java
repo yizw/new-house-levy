@@ -61,7 +61,6 @@ import com.umeng.analytics.MobclickAgent;
 	public HouseList entity;
 	public HouseConfirm c;
 	
-  //  public HouseList gygrmonetarycopta;
 	
 	  /** 是否是新增确认信息*/
     boolean isAdd = true;

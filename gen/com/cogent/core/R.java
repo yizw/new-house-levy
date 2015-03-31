@@ -13,15 +13,15 @@ public final class R {
 		public static final int icon = 0x7f020048;
 	}
 	public static final class id {
-		public static final int btn = 0x7f0a0005;
-		public static final int head_arrowImageView = 0x7f0a0007;
-		public static final int head_contentLayout = 0x7f0a0006;
-		public static final int head_lastUpdatedTextView = 0x7f0a000a;
-		public static final int head_progressBar = 0x7f0a0008;
-		public static final int head_tipsTextView = 0x7f0a0009;
-		public static final int img_photo = 0x7f0a000b;
-		public static final int prg = 0x7f0a0004;
-		public static final int txt = 0x7f0a0003;
+		public static final int btn = 0x7f0b0005;
+		public static final int head_arrowImageView = 0x7f0b0007;
+		public static final int head_contentLayout = 0x7f0b0006;
+		public static final int head_lastUpdatedTextView = 0x7f0b000a;
+		public static final int head_progressBar = 0x7f0b0008;
+		public static final int head_tipsTextView = 0x7f0b0009;
+		public static final int img_photo = 0x7f0b000b;
+		public static final int prg = 0x7f0b0004;
+		public static final int txt = 0x7f0b0003;
 	}
 	public static final class layout {
 		public static final int com_download_status = 0x7f030002;
@@ -32,7 +32,7 @@ public final class R {
 		public static final int com_status_show = 0x7f030007;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f060001;
-		public static final int hello = 0x7f060000;
+		public static final int app_name = 0x7f070001;
+		public static final int hello = 0x7f070000;
 	}
 }

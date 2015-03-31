@@ -1,0 +1,27 @@
+#ormlite
+-libraryjars libs/ormlite-android-4.41.jar
+-libraryjars libs/ormlite-core-4.41.jar
+-dontwarn com.j256.**
+-keep class com.j256.** { *; }
+-keep class org.apache.**{*;} 
+
+#友盟sdk
+-libraryjars libs/umeng_sdk.jar
+-keepclassmembers class * {
+public (org.json.JSONObject);
+}
+-keep public class com.smile.android.R$*{
+public static final int ;
+}
+
+#gson
+-ibraryjars libs/gson-2.2.2.jar
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.* { ; }
+-keep class com.google.gson.examples.android.model.* { ; }
+-keep class com.google.gson.* { *;}
+
+#support-v4包
+-libraryjars libs/android-support-v4.jar
+-dontwarn android.support.v4.**
+-keep class android.support.v4.** { ; }
