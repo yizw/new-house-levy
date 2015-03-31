@@ -1,0 +1,171 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/household_info_tab2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+       <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+      
+	      <LinearLayout
+            android:id="@+id/house_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">  
+      <ImageView 
+        android:layout_height="wrap_content"
+		android:layout_width="30dp"		
+		android:layout_marginLeft="10dp"
+		android:src="@drawable/sign_blue"/> 
+		
+  	  <Button android:id="@+id/btn_houseconfirm"
+		android:layout_width="60dp"
+		android:layout_height="43dp"
+		android:textSize="16sp"
+		android:text="房屋调查确认表"
+		android:layout_weight="1"
+		android:textColor = "@color/bluegreen"
+		android:gravity="left|center_vertical"/>	
+		
+	<ImageView android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_marginRight="15dp"
+		android:src="@drawable/list_arrow"/>		
+         </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/coptsheet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">  
+      <ImageView 
+        android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_marginLeft="10dp"
+		android:src="@drawable/sign_blue"/>  
+  	
+  	  <Button android:id="@+id/btn_coptsheet"
+		android:layout_width="60dp"
+		android:layout_height="43dp"
+		android:textSize="16sp"
+		android:text="补偿计算单"
+		android:layout_weight="1"
+		android:textColor = "@color/bluegreen"
+		android:gravity="left|center_vertical"/>	
+  	
+	  <ImageView android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_marginRight="15dp"
+		android:src="@drawable/list_arrow"/>		
+     </LinearLayout>
+
+
+
+          <LinearLayout
+            android:id="@+id/house_pushtable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">  
+      <ImageView 
+            android:layout_height="wrap_content"
+	    	android:layout_width="30dp"
+		    android:layout_marginLeft="10dp"
+		    android:src="@drawable/sign_blue"/> 
+  	
+  	 <Button android:id="@+id/btn_housepushtable"
+	    	android:layout_width="60dp"
+	    	android:layout_height="43dp"
+	    	android:textSize="16sp"
+	     	android:text="分户推进表"
+	    	android:layout_weight="1"
+	    	android:textColor = "@color/bluegreen"
+	    	android:gravity="left|center_vertical"/>	
+		
+	   <ImageView android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_marginRight="15dp"
+		android:src="@drawable/list_arrow"/>		
+       </LinearLayout>  	            
+	      
+	    
+      <LinearLayout
+            android:id="@+id/house_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">  
+      <ImageView 
+            android:layout_height="wrap_content"
+	    	android:layout_width="30dp"
+		    android:layout_marginLeft="10dp"
+		    android:src="@drawable/sign_blue"/> 
+  	
+  	  <Button android:id="@+id/btn_housefeedback"
+	    	android:layout_width="60dp"
+	    	android:layout_height="43dp"
+	    	android:textSize="16sp"
+	     	android:text="分户问题反馈"
+	    	android:layout_weight="1"
+	    	android:textColor = "@color/bluegreen"
+	    	android:gravity="left|center_vertical"/>	
+		
+	   <ImageView android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_marginRight="15dp"
+		android:src="@drawable/list_arrow"/>		
+       </LinearLayout>
+          
+          
+      
+      
+         <LinearLayout
+            android:id="@+id/house_timecontrol"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">  
+      <ImageView 
+            android:layout_height="wrap_content"
+	    	android:layout_width="30dp"
+		    android:layout_marginLeft="10dp"
+		    android:src="@drawable/sign_blue"/> 
+  	
+  	  <Button android:id="@+id/btn_timecontrol"
+	    	android:layout_width="60dp"
+	    	android:layout_height="43dp"
+	    	android:textSize="16sp"
+	     	android:text="流程控制"
+	    	android:layout_weight="1"
+	    	android:textColor = "@color/bluegreen"
+	    	android:gravity="left|center_vertical"/>	
+		
+	   <ImageView android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_marginRight="15dp"
+		android:src="@drawable/list_arrow"/>		
+       </LinearLayout>
+      
+      
+      
+          
+        
+	    </LinearLayout>
+    </LinearLayout>      
+    </ScrollView>

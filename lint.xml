@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    
+    <!--     
+    "ContentDescription": Ensures that image widgets provide a contentDescription
+    
+    "DuplicateIncludedIds": Checks for duplicate ids across layouts that are combined with include tags
+    
+    "DuplicateIds": Checks for duplicate ids within a single layout
+    
+    "StateListReachable": Looks for unreachable states in a <selector>
+    
+    "InefficientWeight": Looks for inefficient weight declarations in LinearLayouts
+    
+    "NestedWeights": Looks for nested layout weights, which are costly    
+     -->
+    
+    <issue id="ContentDescription">
+        <ignore path="res/layout/loading.xml" />
+        <ignore path="res/layout/login.xml" />
+        <ignore path="res/layout/householdlist_item.xml" />
+        <ignore path="res/layout/household_info_tab2.xml" />
+    </issue>    
+    
+    <issue id="DuplicateIds">
+        <ignore path="res/layout/household_info_tab2.xml" />       
+    </issue>
+    <issue id="HandlerLeak" severity="ignore">
+        <ignore path="src/com/cogent/HouseLevy/UI/GYGRMonetaryCoptA.java" />
+    </issue>
+        
+    <issue id="HardcodedText">
+        <ignore path="res/layout/about.xml" />
+        <ignore path="res/layout/coptsheet.xml" />
+        <ignore path="res/layout/hou_gygr_monetary_tab1.xml" />
+        <ignore path="res/layout/hou_gygr_monetary_tab2.xml" />
+        <ignore path="res/layout/hou_gygr_monetary_tab3.xml" />
+        <ignore path="res/layout/hou_gygr_monetary_tab4.xml" />
+        <ignore path="res/layout/hou_gygr_monetary.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable_tab1.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable_tab2.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable_tab3.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable_tab4.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange_tab1.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange_tab2.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange_tab3.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange_tab4.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary_tab1.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary_tab2.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary_tab3.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary_tab4.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary.xml" />
+        <ignore path="res/layout/hou_gyqy_pro_mon_confirmtable.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange_tab1.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange_tab2.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange_tab3.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange_tab4.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable_tab1.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable_tab2.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable_tab3.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable_tab4.xml" />        
+        <ignore path="res/layout/hou_jtgr_proexchange_tab1.xml" />
+        <ignore path="res/layout/hou_jtgr_proexchange_tab2.xml" />
+        <ignore path="res/layout/hou_jtgr_proexchange_tab3.xml" />
+        <ignore path="res/layout/hou_jtgr_proexchange_tab4.xml" />
+        <ignore path="res/layout/hou_jtgr_proexchange.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary_tab1.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary_tab2.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary_tab3.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary_tab4.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary.xml" />
+        <ignore path="res/layout/hou_jtqy_monetary_tab1.xml" />        
+        <ignore path="res/layout/hou_jtqy_monetary_tab2.xml" />
+        <ignore path="res/layout/hou_jtqy_monetary_tab3.xml" />
+        <ignore path="res/layout/hou_jtqy_monetary_tab4.xml" />
+        <ignore path="res/layout/hou_jtqy_monetary.xml" />
+        <ignore path="res/layout/hou_jtqy_proexchange_tab1.xml" />
+        <ignore path="res/layout/hou_jtqy_proexchange_tab2.xml" />
+        <ignore path="res/layout/hou_jtqy_proexchange_tab3.xml" />
+        <ignore path="res/layout/hou_jtqy_proexchange_tab4.xml" />        
+        <ignore path="res/layout/hou_jtqy_proexchange.xml" />
+        
+        <ignore path="res/layout/household_copt_list_item.xml" />
+        <ignore path="res/layout/household_info_tab1.xml" />
+        <ignore path="res/layout/household_info_tab2.xml" />
+        <ignore path="res/layout/household_projectlist_item.xml" />
+        <ignore path="res/layout/household_pushtable_list_item.xml" />
+        <ignore path="res/layout/householdlist_item.xml" />
+        <ignore path="res/layout/main_item.xml" />        
+        <ignore path="res/layout/main_projectlist_item.xml" />
+        <ignore path="res/layout/total_pushtable_detail_item.xml" />
+        <ignore path="res/layout/total_pushtable_list_item.xml" />
+       
+        <ignore path="res/layout/ty_img_look.xml" />       
+        <ignore path="res/layout/ty_title_bar.xml" />
+        <ignore path="res/layout/ty_title_bar_add.xml" />
+        <ignore path="res/layout/ty_title_bar_refresh.xml" />
+        <ignore path="res/layout/ty_title_bar_save.xml" />
+        <ignore path="res/layout/ty_title_bar_search.xml" />
+    </issue>
+    
+    
+    <issue id="InefficientWeight">
+        <ignore path="res/layout/about.xml" />
+        <ignore path="res/layout/household_info_tab2.xml" />
+        <ignore path="res/layout/ty_title_bar.xml" />
+    </issue>
+     
+    
+    <issue id="PxUsage">        
+        <ignore path="res/layout/householdlist.xml" />       
+    </issue> 
+    <issue id="SelectableText">
+        <ignore path="res/layout/loading.xml" />
+        <ignore path="res/layout/sync_data.xml" />
+    </issue>
+    
+    <issue id="SmallSp">
+        <ignore path="res/layout/login.xml" />
+    </issue>
+     <issue id="ScrollViewSize">
+        <ignore path="res/layout/household_projectlist.xml" />
+        <ignore path="res/layout/total_pushtable_list.xml" />                
+        <ignore path="res/layout/hou_gygr_monetary_tab1.xml" />
+        <ignore path="res/layout/hou_gygr_monetary_tab2.xml" />
+        <ignore path="res/layout/hou_gygr_monetary_tab3.xml" />
+        <ignore path="res/layout/hou_gygr_monetary_tab4.xml" />
+        <ignore path="res/layout/hou_gygr_monetary.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable_tab1.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable_tab2.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable_tab3.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable_tab4.xml" />
+        <ignore path="res/layout/hou_gygr_pro_mon_confirmtable.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange_tab1.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange_tab2.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange_tab3.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange_tab4.xml" />
+        <ignore path="res/layout/hou_gygr_proexchange.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary_tab1.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary_tab2.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary_tab3.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary_tab4.xml" />
+        <ignore path="res/layout/hou_gyqy_monetary.xml" />
+        <ignore path="res/layout/hou_gyqy_pro_mon_confirmtable.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange_tab1.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange_tab2.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange_tab3.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange_tab4.xml" />
+        <ignore path="res/layout/hou_gyqy_proexchange.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable_tab1.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable_tab2.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable_tab3.xml" />
+        <ignore path="res/layout/hou_jtgr_pro_mon_confirmtable_tab4.xml" />        
+        <ignore path="res/layout/hou_jtgr_proexchange_tab1.xml" />
+        <ignore path="res/layout/hou_jtgr_proexchange_tab2.xml" />
+        <ignore path="res/layout/hou_jtgr_proexchange_tab3.xml" />
+        <ignore path="res/layout/hou_jtgr_proexchange_tab4.xml" />
+        <ignore path="res/layout/hou_jtgr_proexchange.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary_tab1.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary_tab2.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary_tab3.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary_tab4.xml" />
+        <ignore path="res/layout/hou_jtgr_monetary.xml" />
+        <ignore path="res/layout/hou_jtqy_monetary_tab1.xml" />        
+        <ignore path="res/layout/hou_jtqy_monetary_tab2.xml" />
+        <ignore path="res/layout/hou_jtqy_monetary_tab3.xml" />
+        <ignore path="res/layout/hou_jtqy_monetary_tab4.xml" />
+        <ignore path="res/layout/hou_jtqy_monetary.xml" />
+        <ignore path="res/layout/hou_jtqy_proexchange_tab1.xml" />
+        <ignore path="res/layout/hou_jtqy_proexchange_tab2.xml" />
+        <ignore path="res/layout/hou_jtqy_proexchange_tab3.xml" />
+        <ignore path="res/layout/hou_jtqy_proexchange_tab4.xml" />        
+        <ignore path="res/layout/hou_jtqy_proexchange.xml" /> 
+     </issue>
+    
+    <issue id="TextFields">
+        <ignore path="res/layout/household_info.xml" />
+        <ignore path="res/layout/msg_first_info_item_edit.xml" />
+    </issue>    
+    
+    <issue id="TooManyViews">
+        <ignore path="res/layout/household_info.xml" />        
+    </issue>
+    
+    <issue id="UseCompoundDrawables">
+        <ignore path="res/layout/login.xml" />
+    </issue>
+    
+    
+</lint>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/add_proexchange"  
+		android:title="新增产权调换协议"
+		android:enabled="true"/>
+	<item
+		android:id="@+id/add_montarycopt"
+		android:title="新增货币补偿协议" />
+	
+</menu>

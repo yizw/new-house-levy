@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+     <include layout="@layout/ty_title_bar_refresh"/>
+    
+    <ScrollView android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:orientation="vertical">
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:orientation="horizontal">
+		<TextView style="@style/style_txt_bold"
+		    android:layout_width="wrap_content"
+			android:textSize="18sp"
+			android:text="@string/app_name"/>
+		<TextView android:id="@+id/txt_VersionCode"
+		    style="@style/style_txt_bold"
+		    android:layout_width="wrap_content"		    
+		    android:textSize="18sp"/>
+	</LinearLayout>
+	
+	<TextView android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:text="深圳市高正软件有限公司 版权所有"/>
+	<TextView android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="Copyright©2013~2015"/>
+	<TextView android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="Cogentsoft All Rights Reserved"/>
+			
+	<TextView android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:autoLink="all"
+		android:text="服务电话：0755-26741022"/>
+	<TextView android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:autoLink="all"
+		android:text="技术支持：support@cogentsoft.com.cn"/>
+	<TextView android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:autoLink="all"
+		android:text="公司网址：http://www.cogentsoft.com.cn"/>
+	
+	<TextView style="@style/style_txt_bold"
+		android:layout_marginTop="20dp"
+		android:layout_marginBottom="5dp"
+		android:textSize="18sp"
+		android:text="版本更新记录"/>
+	
+	
+	<TextView style="@style/style_txt_bold"
+	    android:layout_marginTop="5dp"
+		android:text="2015-03-20  V3.0"/>
+	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="1、算单逻辑值调整
+		\n2、主页界面调整
+		\n3、新增分户流程控制模块
+		\n4、项目时限控制模块调整
+		\n5、新增权限控制
+		\n6、编辑用户个人信息调整
+		\n7、其它功能调整"/>
+	
+	<TextView style="@style/style_txt_bold"
+	    android:layout_marginTop="5dp"
+		android:text="2015-02-10  V2.3"/>
+	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="1、算单样式、逻辑值调整
+		\n2、确认表、算单输入数值增加条件限制
+		\n3、国有、集体个人产权算单选房及部分逻辑值调整
+		\n4、房源管理调整
+		\n5、软件优化，提升稳定性和健壮性
+		\n6、其它功能调整"/>
+	
+	 
+	
+	<TextView style="@style/style_txt_bold"
+	    android:layout_marginTop="5dp"
+		android:text="2015-01-31  V2.2"/>
+	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="1、部分页面布局样式调整
+		\n2、算单选房问题修复
+		\n3、分户问题反馈Bug修复
+		\n4、确认表和算单部分逻辑值调整
+		\n6、其它功能调整"/>
+	
+	<TextView style="@style/style_txt_bold"
+	    android:layout_marginTop="5dp"
+		android:text="2015-01-27  V2.1"/>
+	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="1、修复集体个人产权算单Bug
+		\n2、修复资金余额Bug
+		\n3、修复项目问题反馈Bug
+		\n4、修复获取房间列表Bug
+		\n5、新增确认表和算单添加附件功能"/>
+	
+	
+	 <TextView style="@style/style_txt_bold"
+	    android:layout_marginTop="5dp"
+		android:text="2015-01-22  V2.0"/>
+	 <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="1、主页样式大幅度调整
+		\n2、解决各Android机型适配问题
+		\n3、修改“更多”模块
+		\n4、新增项目问题反馈功能
+		\n5、新增分户问题反馈功能
+		\n6、新增时限控制功能
+		\n7、新增资金余额查看功能
+		\n8、新增资料库查询功能
+		\n9、房间列表查询问题修复   
+		\n10、房间选择问题修复
+		\n11、确认表及算单项调整修改
+		\n12、国有个人产权算单调整
+		\n13、国有个人货币算单调整
+		\n14、国有企业确认表房屋产权功能调整
+		\n15、集体个人产权算单调整
+		\n16、国有企业货币、集体企业货币确认表调整
+		\n17、国有企业货币、集体企业货币算单调整
+		\n18、集体个人、国有个人算单（产权、货币）调整
+		\n19、其它功能调整"/>
+		
+	<TextView style="@style/style_txt_bold"
+	    android:layout_marginTop="5dp"
+		android:text="2014-12-30  V1.0"/>
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="版本包含功能模块如下：
+		\n1、房屋调查确认表（4份）
+		\n2、分户补偿计算单（8份）
+		\n3、项目分户新增、查看、查询
+		\n4、项目总览
+		\n5、项目总推进表
+		\n6、项目分户推进表
+		\n7、系统设置
+		\n8、资料库
+		\n9、房源查看
+		\n10、用户信息和枚举值数据自动及手动同步
+		\n11、升级检测
+		\n11、关于软件"/>
+	
+	<TextView style="@style/style_txt_bold"
+	    android:layout_marginTop="5dp"
+		android:text="2014-10-26  V0.5"/>
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="1、搭建框架
+		\n2、确定总体布局、样式设计和基本功能样本"/>
+	
+		
+	</LinearLayout>
+	</ScrollView>
+	  
+</LinearLayout>

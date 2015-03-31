@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mhbj"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:src="@drawable/mhinput" />
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        style="@style/style_input_right"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/edit_user"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:textSize="18sp"
+        android:gravity="left|center"
+        android:hint="密　码"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <!-- android:inputType="numberPassword"  -->
+    
+    
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/style_input_right"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_below="@+id/edit_pwd"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/btn_style_login"  
+        />
+
+    <EditText
+        android:id="@+id/edit_user"
+        style="@style/style_input_right"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/edit_pwd"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_marginLeft="18dp" 
+        android:gravity="left|center"
+        android:ems="10"
+        android:hint="用户名"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+    
+    
+    <!-- 
+   
+    <TextView android:layout_width="wrap_content" 
+		android:layout_height="fill_parent"
+		android:gravity="bottom"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="3dp"
+		android:textSize="11sp"
+	    android:layout_centerInParent="true"
+		android:text="Copyright©2012~2015 Cogentsoft All Rights Reserved"/>
+      -->
+    
+    
+    
+</RelativeLayout>

@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+ <include layout="@layout/ty_title_bar_save2"/>  
+
+ 
+ <!-- 国有企业  房屋调查确认表   产权调换确认表和货币补偿确认表是一样的 -->
+ <ScrollView  
+    android:id="@+id/hou_gyqy_pro_mon_confirmtable"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+  
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">        
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical" >
+      
+	        <LinearLayout style="@style/style_input_linear" android:id="@+id/linear_houselocation"
+	             android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_houselocation"
+	                style="@style/style_input_txt" 
+	                android:textColor="@color/red"
+	                android:text="被征收房屋座落位置"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_houselocation_x4" 
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        
+	            
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_houseowner"
+	                style="@style/style_input_txt" 
+	                android:textColor="@color/red"
+	                android:text="房屋所有权人"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_houseowner_x1"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	       <LinearLayout android:id="@+id/linear_txt_register"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="0dp">        
+	        <LinearLayout style="@style/style_input_linear" >
+	            <TextView style="@style/style_input_txt_1" 
+	                android:textColor="@color/bluegreen"
+	                android:text="企业基本情况登记"/>	                      
+	        </LinearLayout>
+	       </LinearLayout>
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_licenseno"
+	                style="@style/style_input_txt" android:text="工商营业执照号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_licenseno"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_authority"
+	                style="@style/style_input_txt" android:text="登记注册机关"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_authority"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_operatperiod"
+	                style="@style/style_input_txt" android:text="批准经营期限"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_operatperiod"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_busaddress"
+	                style="@style/style_input_txt" android:text="批准经营地址"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_busaddress"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_enterprisename"
+	                style="@style/style_input_txt_blue" android:text="企业名称"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_enterprisename_x1"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_enterprisenature"
+	                style="@style/style_input_txt" android:text="企业性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_enterprisenature"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_representative"
+	                style="@style/style_input_txt" android:text="法定代表人"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_representative_x186"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_tellink"
+	                style="@style/style_input_txt" android:text="联系电话"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_tellink_x3"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_isoperat"
+	                style="@style/style_input_txt" android:text="是否经营"/>
+	            <include layout="@layout/ty_input_split"/>
+	             <EditText android:id="@+id/edit_isoperat"
+		             style="@style/style_input_right" />
+	        </LinearLayout>
+	        
+	          
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_paysecurity"
+	                style="@style/style_input_txt" android:text="交纳社保情况"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_paysecurity"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_taxproof"
+	                style="@style/style_input_txt" android:text="应纳所得税证明情况"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_taxproof"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	          
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_islegaluse"
+	                style="@style/style_input_txt" android:text="是否合法用地土地"/>
+	            <include layout="@layout/ty_input_split"/>
+	             <EditText android:id="@+id/edit_islegaluse"
+		             style="@style/style_input_right"/>
+	        </LinearLayout>
+	          
+	          
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_apprprocedure"
+	                style="@style/style_input_txt" android:text="批准手续"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_apprprocedure"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	          
+	           <LinearLayout android:id="@+id/linear_txt_houseregister"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="0dp">        
+	        <LinearLayout style="@style/style_input_linear" >
+	            <TextView style="@style/style_input_txt_1" 
+	                android:textColor="@color/bluegreen"
+	                android:text="被征收房屋基本情况登记"/>	                      
+	        </LinearLayout>
+	       </LinearLayout>
+	       
+	           
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x7_y"
+	                style="@style/style_input_txt" android:text="房屋结构(x7)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_structure_x7_y"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x7_y"
+	                style="@style/style_input_txt" android:text="有证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x7_y"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           
+	           
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x8_y"
+	                style="@style/style_input_txt" android:text="房屋结构(x8)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_structure_x8_y"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x8_y"
+	                style="@style/style_input_txt" android:text="有证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x8_y"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x81_y"
+	                style="@style/style_input_txt" android:text="房屋结构(x81)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_structure_x81_y"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x81_y"
+	                style="@style/style_input_txt" android:text="有证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x81_y"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x84_y"
+	                style="@style/style_input_txt" android:text="房屋结构(x84)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_structure_x84_y"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x84_y"
+	                style="@style/style_input_txt" android:text="有证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x84_y"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x200_y"
+	                style="@style/style_input_txt" android:text="房屋结构(x200)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_structure_x200_y"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x200_y"
+	                style="@style/style_input_txt" android:text="有证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x200_y"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x201_y"
+	                style="@style/style_input_txt" android:text="房屋结构(x201)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_structure_x201_y"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x201_y"
+	                style="@style/style_input_txt" android:text="有证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x201_y"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           
+	           
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x11_y"
+	                style="@style/style_input_txt" android:text="有证面积合计(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x11_y"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x7_n"
+	                style="@style/style_input_txt_blue" android:text="房屋结构(x7)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x7_n"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x7_n"
+	                style="@style/style_input_txt" android:text="无证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x7_n"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           
+	           
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x8_n"
+	                style="@style/style_input_txt_blue" android:text="房屋结构(x8)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x8_n"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x8_n"
+	                style="@style/style_input_txt" android:text="无证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x8_n"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x81_n"
+	                style="@style/style_input_txt_blue" android:text="房屋结构(x81)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x81_n"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x81_n"
+	                style="@style/style_input_txt" android:text="无证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x81_n"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x84_n"
+	                style="@style/style_input_txt_blue" android:text="房屋结构(x84)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x84_n"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x84_n"
+	                style="@style/style_input_txt" android:text="无证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x84_n"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x200_n"
+	                style="@style/style_input_txt_blue" android:text="房屋结构(x200)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x200_n"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x200_n"
+	                style="@style/style_input_txt" android:text="无证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x200_n"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_strucuture_x201_n"
+	                style="@style/style_input_txt_blue" android:text="房屋结构(x201)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x201_n"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x201_n"
+	                style="@style/style_input_txt" android:text="无证面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x201_n"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x12_n"
+	                style="@style/style_input_txt" android:text="无证面积合计(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_area_x12_n"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x600"
+	                style="@style/style_input_txt" android:text="无证自建房屋认定面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x600"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear"  >
+	            <TextView android:id="@+id/txt_house1"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="房屋产权手续登记"/>
+	        </LinearLayout>	  
+	                    
+                  
+	      
+	      <LinearLayout style="@style/style_input_linear" 
+	          android:background="@drawable/preference_last_item"
+                android:id="@+id/linear_housechoice1">
+	            <TextView android:id="@+id/txt_house_choice_1"
+	                style="@style/style_input_txt" android:text="房屋产权"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_confirmreg"
+		                android:textSize="16sp"
+		                android:text="产权列表"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	      
+	      
+	        
+	        
+	        
+	        
+	        <!-- 
+	        	        
+	        <LinearLayout android:id="@+id/linear_txt_proregister"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="0dp">        
+	        <LinearLayout style="@style/style_input_linear" >
+	            <TextView style="@style/style_input_txt_1" 
+	                android:textColor="@color/bluegreen"
+	                android:text="房屋产权手续登记"/>	                      
+	        </LinearLayout>
+	       </LinearLayout>
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prono"
+	                style="@style/style_input_txt" android:text="产权证号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prono"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_pronature"
+	                style="@style/style_input_txt" android:text="产权属性"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_pronature"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prouse"
+	                style="@style/style_input_txt" android:text="用途"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prouse"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_proarea"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_proarea"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           <LinearLayout android:id="@+id/linear_txt_buildregister"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="0dp">        
+	        <LinearLayout style="@style/style_input_linear" >
+	            <TextView style="@style/style_input_txt_1" 
+	                android:textColor="@color/bluegreen"
+	                android:text="建房手续登记"/>	                      
+	        </LinearLayout>
+	       </LinearLayout>
+	          
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_approveno"
+	                style="@style/style_input_txt" android:text="批准文件号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_approveno"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_approvedepart"
+	                style="@style/style_input_txt" android:text="批准部门"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_approvedepart"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_approvearea"
+	                style="@style/style_input_txt" android:text="批准建设面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_approvearea"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>         
+	          
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ismortgage"
+	                style="@style/style_input_txt" android:text="被征收房屋及土地是否设置抵押"/>
+	            <include layout="@layout/ty_input_split"/>	            
+	            <EditText android:id="@+id/edit_ismortgage"
+		             style="@style/style_input_right"/>	            
+	        </LinearLayout>
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_mortsituation"
+	                style="@style/style_input_txt" android:text="具体情况"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_specsituation"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_isclose"
+	                style="@style/style_input_txt" android:text="被征收房屋及土地是否被查封"/>
+	            <include layout="@layout/ty_input_split"/>	            
+	            <EditText android:id="@+id/edit_isclose"
+		             style="@style/style_input_right"/>	            
+	        </LinearLayout>
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_closesituation"
+	                style="@style/style_input_txt" android:text="具体情况"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_closesituation"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	                  	         
+	         -->
+	         
+	         
+	         
+	         <LinearLayout android:id="@+id/linear_txt_fujian"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">        
+	            <TextView style="@style/style_input_txt_1" 
+	               android:textColor="@color/bluegreen"
+	               android:layout_marginLeft="5dp"
+	               android:text="附属及装饰修饰设施补偿情况"/>	                      
+	         </LinearLayout>
+	        
+	        
+	           <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_att1"
+                android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_att_1"
+	                style="@style/style_input_txt" android:text="附表一"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_att_1"
+		                android:textSize="16sp"
+		                android:text="室外附属设施调查表"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>
+	           
+	           
+	           <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_att2">
+	            <TextView android:id="@+id/txt_att_2"
+	                style="@style/style_input_txt" android:text="附表二"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_att_2"
+		                android:textSize="16sp"
+		                android:text="室内设施调查表"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>
+	        
+	           
+	           <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_att3"
+                android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_att_3"
+	                style="@style/style_input_txt" android:text="附表三"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_att_3"
+		                android:textSize="16sp"
+		                android:text="室内装饰、装修设施调查表"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>
+	        
+	         
+	           
+	         
+	        <LinearLayout style="@style/style_input_linear" 
+	            android:layout_marginTop="5dp"
+	            android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_remark"
+	                style="@style/style_input_txt" android:text="备注"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_remark"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout style="@style/style_input_linear"  android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_maininquirer"
+	                style="@style/style_input_txt_blue" 
+	                android:text="主调查人"/>
+	            <include layout="@layout/ty_input_split"/>
+	           <TextView android:id="@+id/text_maininquirer_x218"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	  
+	    </LinearLayout>
+    </LinearLayout>      
+    </ScrollView>
+ 
+</LinearLayout>

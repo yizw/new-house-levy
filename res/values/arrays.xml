@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="list_names">
+       	<item>正式服务器</item>                   
+    </string-array>     
+    <string-array name="list_values">
+        <item>@string/NetAddress</item>     
+    </string-array>
+</resources>
+
+<!-- 
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="list_names">
+       	<item>正式服务器</item> 
+       	<item>yizw</item>      
+        <item>test</item>                
+    </string-array>     
+    <string-array name="list_values">
+        <item>@string/NetAddress</item>     
+        <item>https://192.168.0.250/svn/GYFW/trunk/HouseLevy/upload.do</item>
+        <item>http://192.168.0.106:8080/app/upload.do</item>           
+    </string-array>
+</resources>
+
+ -->

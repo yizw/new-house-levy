@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/total_push_info"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/ty_title_bar"/>
+
+
+<ScrollView  
+    android:id="@+id/hou_confirm_att_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+       <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:orientation="vertical">
+	        
+      
+	        <LinearLayout style="@style/style_input_linear" android:id="@+id/txt_name"
+	            android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/text_name"
+	                style="@style/style_input_txt_3" 
+	                android:text="名称"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_name"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_type"
+	                style="@style/style_input_txt_3"
+	                android:text="类别"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_type"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	      
+	          <LinearLayout style="@style/style_input_linear" android:id="@+id/txt_unit">
+	            <TextView android:id="@+id/text_unit"
+	                style="@style/style_input_txt_3" 
+	                android:text="单位"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_unit"  
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear" android:id="@+id/txt_num">
+	            <TextView android:id="@+id/text_num"
+	                style="@style/style_input_txt_3" 
+	                android:text="数量"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_num"
+	                 android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        
+	         
+	         <LinearLayout style="@style/style_input_linear" android:id="@+id/txt_remark"
+	             android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/text_remark"
+	                style="@style/style_input_txt_3" 
+	                android:text="备注"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_remark"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	         
+        
+	    </LinearLayout>
+    </LinearLayout>      
+    </ScrollView>
+</LinearLayout>

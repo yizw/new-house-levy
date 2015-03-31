@@ -1,0 +1,45 @@
+ <!--            
+    分户-集体个人-货币补偿和产权调换-确认表-tab2
+   -->
+  
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hou_jtgr_pro_mon_confirmtable_tab2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+    
+           	        
+	        <LinearLayout android:id="@+id/linear_txt_rending"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">        
+	            <TextView style="@style/style_input_txt_1" 
+	                android:textColor="@color/bluegreen"
+	                android:layout_marginLeft="5dp"
+	                android:text="户籍情况调查"/>	                      
+	         </LinearLayout>     
+           
+           
+	 <Button android:id="@+id/btn_tab2_new" 
+       android:textColor="@color/blue" 
+       android:textSize="15sp"
+       android:layout_width="fill_parent" 
+       android:layout_height="60dp"
+       android:text="新增户籍人员" />
+    
+    <View android:background="@drawable/divider_line"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="2dp" />
+    
+     <ListView android:id="@+id/jtlist_confirm_main_tab2"
+        android:layout_height="fill_parent"
+    	android:scrollingCache="false" 
+    	android:fadingEdge="none"
+    	android:divider="@drawable/divider_line"
+		android:layout_width="fill_parent"/>
+	        
+	        
+ 
+    </LinearLayout>
+  

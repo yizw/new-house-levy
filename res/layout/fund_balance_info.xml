@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/ty_title_bar_refresh"/>
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/list_background_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前项目预算金额为:"
+                android:textColor="#5e6d81"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/budget_fund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:layout_marginLeft="120dp"
+                android:textColor="@color/bluegreen"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+      
+    </LinearLayout>
+    
+    
+    
+    
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/list_background_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前项目拨入总金额为:"
+                android:textColor="#5e6d81"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/all_fund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:layout_marginLeft="120dp"
+                android:textColor="@color/bluegreen"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+      
+    </LinearLayout>
+    
+    
+        
+    
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/list_background_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前项目余额为:"
+                android:textColor="#5e6d81"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/fund_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:layout_marginLeft="120dp"
+                android:textColor="@color/bluegreen"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+      
+    </LinearLayout>
+    
+    
+       
+    
+
+</LinearLayout>

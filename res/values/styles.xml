@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -17,4 +17,325 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    
+    
+    
+    
+	
+	<!-- Input样式控制-->
+	<style name="style_input_linear" >  
+         <item name="android:orientation">horizontal</item>  
+         <item name="android:layout_width">fill_parent</item> 
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:addStatesFromChildren">true</item> 
+         <item name="android:background">@drawable/preference_item</item>
+         <item name="android:gravity">center_vertical</item>
+    </style>
+    
+	
+	 <style name="style_input_txt_1" >  
+         <item name="android:textSize">18sp</item>  
+         <item name="android:textColor">#808080</item> 
+         <item name="android:layout_width">wrap_content</item> 
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:gravity">left</item>         
+         <item name="android:shadowColor">#808080</item>
+         <item name="android:shadowDx">0.2</item>
+         <item name="android:shadowDy">0.0</item>
+         <item name="android:shadowRadius">0.2</item>
+    </style>  
+	
+	
+    <style name="style_input_txt" >  
+         <item name="android:textSize">15.5sp</item>  
+         <item name="android:textColor">#808080</item> 
+         <item name="android:layout_width">110dp</item> 
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:gravity">right</item>         
+         <item name="android:shadowColor">#808080</item>
+         <item name="android:shadowDx">0.2</item>
+         <item name="android:shadowDy">0.0</item>
+         <item name="android:shadowRadius">0.2</item>
+    </style>  
+    
+    
+    
+     <style name="style_input_txt_color" >  
+         <item name="android:textSize">15.5sp</item>  
+         <item name="android:textColor">#decb00</item> 
+         <item name="android:layout_width">110dp</item> 
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:gravity">right</item>         
+         <item name="android:shadowColor">#decb00</item>
+         <item name="android:shadowDx">0.2</item>
+         <item name="android:shadowDy">0.0</item>
+         <item name="android:shadowRadius">0.2</item>
+    </style>  
+    
+     
+         <style name="style_input_txt_blue" >  
+         <item name="android:textSize">15.5sp</item>  
+         <item name="android:textColor">#009ad6</item> 
+         <item name="android:layout_width">110dp</item> 
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:gravity">right</item>         
+         <item name="android:shadowColor">#009ad6</item>
+         <item name="android:shadowDx">0.2</item>
+         <item name="android:shadowDy">0.0</item>
+         <item name="android:shadowRadius">0.2</item>
+    </style> 
+     
+     
+    
+     <style name="style_input_txt_2" >  
+         <item name="android:textSize">16sp</item>  
+         <item name="android:textColor">#808080</item> 
+         <item name="android:layout_width">120dp</item> 
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:gravity">right</item>         
+         <item name="android:shadowColor">#808080</item>
+         <item name="android:shadowDx">0.2</item>
+         <item name="android:shadowDy">0.0</item>
+         <item name="android:shadowRadius">0.2</item>
+    </style>  
+   
+     
+     
+       <style name="style_input_txt_3" >  
+         <item name="android:textSize">15.5sp</item>  
+         <item name="android:textColor">#808080</item> 
+         <item name="android:layout_width">70dp</item> 
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:gravity">right</item>         
+         <item name="android:shadowColor">#808080</item>
+         <item name="android:shadowDx">0.2</item>
+         <item name="android:shadowDy">0.0</item>
+         <item name="android:shadowRadius">0.2</item>
+    </style>  
+    
+          <style name="style_input_txt_3_color" >  
+         <item name="android:textSize">15.5sp</item>  
+         <item name="android:textColor">#decb00</item> 
+         <item name="android:layout_width">70dp</item> 
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:gravity">right</item>         
+         <item name="android:shadowColor">#decb00</item>
+         <item name="android:shadowDx">0.2</item>
+         <item name="android:shadowDy">0.0</item>
+         <item name="android:shadowRadius">0.2</item>
+    </style>  
+    
+     
+    
+     <style name="style_input_right" >  
+         <item name="android:layout_width">wrap_content</item> 
+         <item name="android:layout_height">wrap_content</item> 
+         <item name="android:minHeight">40dp</item> 
+         <item name="android:layout_weight">1</item> 
+         <item name="android:gravity">left|center_vertical</item>
+         <item name="android:background">@null</item>
+         <item name="android:textColor">@color/black</item>
+         <item name="android:textSize">16sp</item>
+    </style>
+    
+     
+     
+     
+    
+     
+    <!-- 描述文字（TextView）默认样式-->
+    <style name="style_DefaultText" >  
+         <item name="android:textSize">15sp</item>  
+         <item name="android:textColor">@color/black</item> 
+         <item name="android:layout_width">90dp</item> 
+         <item name="android:layout_height">wrap_content</item> 
+         <item name="android:layout_gravity">center_vertical</item> 
+         <item name="android:gravity">right</item>
+    </style>  
+    
+   
+     
+    
+	<!-- 加粗 -->
+    <style name="style_txt_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0.2</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="style_txt_heihtgray">
+        <item name="android:textColor">@color/heihtgray</item>
+        <item name="android:shadowColor">#777777</item>
+        <item name="android:shadowDx">0.2</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="style_txt_gray">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:shadowColor">#999999</item>
+        <item name="android:shadowDx">0.2</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    
+    <!-- 列表选择按钮 -->
+    <style name="style_list_select_btn" >  
+         <item name="android:layout_width">fill_parent</item> 
+         <item name="android:layout_height">40dp</item> 
+         <item name="android:gravity">left|center_vertical</item>
+         <item name="android:textColor">@color/blue</item>
+         <item name="android:textSize">16sp</item>
+         <item name="android:paddingLeft">25dp</item>
+    </style>
+    
+     <!-- 列表选择按钮2 -->
+    <style name="style_list_select_btn2" >  
+         <item name="android:layout_width">fill_parent</item> 
+         <item name="android:layout_height">40dp</item> 
+         <item name="android:gravity">left|center_vertical</item>
+         <item name="android:textColor">@color/bluegreen</item>
+         <item name="android:textSize">16sp</item>
+         <item name="android:paddingLeft">25dp</item>
+    </style>
+    
+    
+     <!-- 列表选择按钮3  用于Main_Daily页面 -->
+    <style name="style_list_select_btn3" >  
+         <item name="android:layout_width">fill_parent</item> 
+         <item name="android:layout_height">68dp</item> 
+         <item name="android:gravity">left|center_vertical</item>
+         <item name="android:textColor">@color/bluegreen</item> 
+         <item name="android:paddingLeft">25dp</item>
+    </style>
+    
+    
+    
+      <!-- Button按钮默认样式-->
+    <style name="style_DefaultBtn" >  
+         <item name="android:background">@drawable/btn_style_two</item>  
+         <item name="android:layout_width">80dp</item> 
+         <item name="android:layout_height">25dp</item> 
+         <item name="android:textSize">12sp</item> 
+         <item name="android:gravity">center_vertical</item>
+         <item name="android:textColor">@color/bluegreen</item> 
+    </style>
+    
+    
+    <style name="style_ListTxt">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item> 
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>       
+        <item name="android:ellipsize">end</item>       
+        <item name="android:singleLine">true</item>
+    </style>  
+    
+    <!-- 设置界面,键值形式样式控制-->
+    <style name="style_preference_title" parent="@style/style_txt_bold">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item> 
+        <item name="android:layout_marginLeft">14dp</item> 
+        <item name="android:layout_marginTop">10dp</item> 
+        <item name="android:layout_marginBottom">5dp</item> 
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#737373</item>
+    </style>
+    <style name="style_preference_left">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">1</item> 
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="style_preference_right">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item> 
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+    
+      <!-- 全局的默认样式-->
+    <style name="style_textView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/gray</item>
+    </style>    
+  
+     <!-- 列表选择按钮 -->
+    <style name="style_button" >  
+         <item name="android:layout_width">fill_parent</item> 
+         <item name="android:layout_height">68dp</item> 
+         <item name="android:gravity">left|center_vertical</item>
+         <item name="android:textColor">@color/bluegreen</item> 
+         <item name="android:paddingLeft">25dp</item>
+    </style>
+    
+    
+    <style name="style_listView" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@color/transparent</item> 
+          <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style><!-- <item name="android:listSelector">@drawable/list_selector_background</item>  -->
+    
+     <style name="style_listView2" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@color/transparent</item> 
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+        <!-- 对话框风格 -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+      <style name="style_listView3" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@color/transparent</item> 
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:dividerHeight">3dp</item>
+    </style>
+    
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    
+  
+  <!--  
+             主题样式控制
+    <style name="theme_default" parent="@android:style/Theme.Light.NoTitleBar" >
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">adjustUnspecified|stateHidden</item>
+        <item name="android:textViewStyle">@style/style_textView</item>
+        <item name="android:buttonStyle">@style/style_button</item>
+        <item name="android:listViewStyle">@style/style_listView</item>
+    </style>    
+   -->
+    
+     <!-- 主题样式控制-->
+    <style name="theme_default" parent="@android:style/Theme.Light.NoTitleBar" >
+        <item name="android:windowBackground">@drawable/mibj</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">adjustUnspecified|stateHidden</item>
+        <item name="android:textViewStyle">@style/style_textView</item>
+        <item name="android:buttonStyle">@style/style_button</item>
+    </style>
+    
+    
+    
 </resources>

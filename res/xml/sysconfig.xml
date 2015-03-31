@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="服务器配置"> 
+	    <EditTextPreference android:key="NetAddress"
+	        android:title="服务地址" android:summary="手工输入配置服务器地址"
+	        android:defaultValue="@string/NetAddress"/>
+	    
+	    <EditTextPreference android:key="ReportAddress"
+			android:title="时限控制服务器地址" android:summary="手工设置时限控制服务器地址"
+			android:defaultValue="@string/ReportAddress"/>
+			    
+	    
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="功能设置"> 
+	    <CheckBoxPreference android:key="AutoUpdate"
+	        android:title="启动自动升级" android:summary="登录后，自动进行版本更新"
+	        android:defaultValue="@string/AutoUpdate"/>
+	    <CheckBoxPreference android:key="AutoSync"
+	        android:title="启动自动同步" android:summary="登录后，自动进行数据同步"
+	        android:defaultValue="@string/AutoSync"/>
+    </PreferenceCategory>
+    
+
+    
+    <PreferenceCategory android:title="数据库维护">	
+		<Preference android:key="InitDatabse"
+			android:title="强行初始化数据库" android:summary="该操作会强行清除现有数据，请慎用"
+			/>     
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 房源选择  第五级  房间号  -->
+    
+ <include layout="@layout/tab3_title_bar"/>  
+ 
+ 
+   <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+            
+        <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_first_item">
+            <TextView style="@style/style_input_txt" android:text="楼栋号"/>
+            <include layout="@layout/ty_input_split"/>
+            <EditText android:id="@+id/edit_bno"
+                android:maxLength="30"
+                style="@style/style_input_right"/>
+        </LinearLayout>
+        
+        <LinearLayout style="@style/style_input_linear" >
+            <TextView style="@style/style_input_txt" android:text="单元号"/>
+            <include layout="@layout/ty_input_split"/>
+            <EditText android:id="@+id/edit_unit"
+                android:maxLength="30"
+                style="@style/style_input_right"/>
+        </LinearLayout> 
+        
+         <LinearLayout style="@style/style_input_linear" >
+            <TextView style="@style/style_input_txt" android:text="楼层号"/>
+            <include layout="@layout/ty_input_split"/>
+            <EditText android:id="@+id/edit_floor"
+                android:maxLength="30"
+                style="@style/style_input_right"/>
+        </LinearLayout> 
+        
+           <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_last_item">
+            <TextView style="@style/style_input_txt" android:text="房间号"/>
+            <include layout="@layout/ty_input_split"/>
+            <EditText android:id="@+id/edit_room"
+                android:maxLength="30"
+                style="@style/style_input_right"/>
+        </LinearLayout>  
+      
+        
+    </LinearLayout> 
+          
+  
+   <View android:background="@drawable/divider_line"
+	             android:layout_width="fill_parent" 
+	             android:layout_height="2px" />
+ 
+
+   <ListView android:id="@+id/list"      
+    android:layout_height="fill_parent"
+    android:layout_marginTop="8dp"
+    android:layout_width="fill_parent"/>
+    
+    
+</LinearLayout>

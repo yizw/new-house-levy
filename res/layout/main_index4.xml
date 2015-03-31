@@ -1,0 +1,126 @@
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/index_tab4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+       <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+         
+           
+        <LinearLayout  
+        android:id="@+id/linear_title"
+	    android:orientation="horizontal" 
+	    android:background="@color/bluetwo" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="48dp"
+	    android:gravity="center_vertical">
+       
+        <TextView android:id="@+id/txt_title_name"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:layout_width="0dp"
+          android:gravity="center_horizontal"
+          android:text="更新检测"
+          android:singleLine="true"
+          android:ellipsize="end"
+          android:textSize="20sp"
+          android:textColor="@android:color/white"/>	    
+       </LinearLayout>
+           
+           
+             
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="120dp"  
+                android:gravity="center"
+                android:orientation="vertical" >
+      
+	            <LinearLayout
+                    android:id="@+id/btn_update"     
+                    style="@style/style_list_select_btn"
+                    android:orientation="horizontal" >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/img_update"
+                        android:scaleType="centerInside" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:ems="5"
+                        android:text="版本更新"
+                        android:textColor="@color/bluegreen"
+                        android:textSize="18sp" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" >
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/imgright" />
+                    </LinearLayout>
+                </LinearLayout>
+              </LinearLayout>
+         
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical" >      
+	            <LinearLayout
+                    android:id="@+id/btn_sync"
+                    style="@style/style_list_select_btn"
+                    android:orientation="horizontal" >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/img_sync"
+                        android:scaleType="centerInside" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:ems="5"
+                        android:text="同步数据"
+                        android:textColor="@color/bluegreen"
+                        android:textSize="18sp" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" >
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/imgright" />
+                    </LinearLayout>
+                </LinearLayout>
+           </LinearLayout>
+            
+            
+            
+            
+            
+	    
+        
+	    </LinearLayout>
+    </LinearLayout>      
+</ScrollView>

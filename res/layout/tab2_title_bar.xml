@@ -1,0 +1,54 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/tab2"
+	android:background="@color/bluetwo" 
+	android:layout_width="fill_parent" 
+	android:layout_height="48dp">
+	
+   <TextView 
+        android:id="@+id/tab2_actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/tab2_title_name"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+    
+    <ImageButton
+        android:id="@+id/tab2_actionbar_left_exit"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_marginLeft="10dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:background="@drawable/actionbar_bg_exit"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/tab2_right_layout"
+        android:layout_width="100dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+        
+        <ImageButton
+        android:id="@+id/tab2_actionbar_refresh"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:background="@drawable/actionbar_bg_refresh"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        />
+    <ImageButton
+        android:id="@+id/tab2_actionbar_search"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:background="@drawable/actionbar_bg_search"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tab1_actionbar_add"
+        android:layout_marginRight="10dip"
+        />
+    </RelativeLayout>
+</RelativeLayout>

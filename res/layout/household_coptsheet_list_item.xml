@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_id"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+    
+    
+      <TextView
+        android:id="@+id/h_id"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+    
+    
+     <TextView
+        android:id="@+id/household_type"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+      <TextView
+        android:id="@+id/project_type"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+       <TextView
+        android:id="@+id/contracttype"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+    
+
+    <LinearLayout
+        android:id="@+id/linear_id"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/coptsheet_01"
+            android:scaleType="centerInside" />
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+             
+                <TextView
+                    android:id="@+id/txt_coptsheettitle1"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:ems="12"
+                    android:lines="5"
+                    android:singleLine="true"
+                    android:text="1"
+                    android:textColor="@color/bluegreen"
+                    android:textSize="15sp" />
+            
+                <TextView
+                    android:id="@+id/txt_coptsheettitle2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:ems="12"
+                    android:lines="5"
+                    android:singleLine="true"
+                    android:text="2"
+                    android:textColor="@color/bluegreen"
+                    android:textSize="15sp" />
+                
+                
+                 <TextView
+                    android:id="@+id/txt_contracttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:ems="12"
+                    android:lines="5"
+                    android:singleLine="true"
+                    android:text="货币补偿"
+                    android:textColor="@color/bluegreen"
+                    android:textSize="15sp" />
+                
+                
+                
+        </LinearLayout>
+
+        
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_right_list" />
+    </LinearLayout>
+
+</LinearLayout>

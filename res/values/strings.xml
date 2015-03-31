@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">NewHouseLevy</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="app_name">房屋征收</string>
+    
+    <!--SysConfig Values-->
+    <string name="NetAddress">http://192.168.98.:8080/GYFW_PDA/upload.do</string>
+    <string name="ReportAddress">http://192.168.98.:8080/GYFW_PDA</string>
+    <string name="AutoUpdate">true</string>
+    <string name="AutoUpload">true</string>
+    <string name="AutoSync">true</string>
+    <string name="UploadCycle">30</string>    
+    <string name="SyncData">2015&#8211;03&#8211;24 06:00:00.0</string>
+    <string name="PhotoMaxHeight">150</string>
+    <string name="PhotoMaxWidth">150</string>
+    
+    <string name="tab1_title_name">分户列表</string>
+    <string name="tab2_title_name">房间列表</string>
+    <string name="tab3_title_name">房间列表</string>
 </resources>

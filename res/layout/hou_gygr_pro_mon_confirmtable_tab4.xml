@@ -1,0 +1,188 @@
+ <!--            
+    分户-国有个人-货币补偿和产权调换-确认表-tab4
+   -->
+
+   
+   <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hou_gygr_pro_mon_confirmtable_tab4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+       <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+      
+           <LinearLayout android:id="@+id/linear_txt_zgf"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">        
+	            <TextView style="@style/style_input_txt_1" 
+	               android:textColor="@color/bluegreen"
+	               android:layout_marginLeft="5dp"
+	               android:text="住改非及相关情况"/>	                      
+	         </LinearLayout>
+           
+           
+	        <LinearLayout style="@style/style_input_linear" android:id="@+id/linear_changeregister"
+	            android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_changeregister"
+	                style="@style/style_input_txt" android:text="住改非登记"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_changeregister"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        
+	        
+	            
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_licenseno"
+	                style="@style/style_input_txt" android:text="工商营业执照号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_licenseno"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_approvaldepartment"
+	                style="@style/style_input_txt" android:text="批准部门"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_approvaldepartment"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_approvaladdress"
+	                style="@style/style_input_txt" android:text="批准经营地址"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_approvaladdress"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_approvaltime"
+	                style="@style/style_input_txt" android:text="批准经营期限"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_approvaltime"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_changetime"
+	                style="@style/style_input_txt" android:text="改变用途时间"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_changetime"
+	                android:maxLength="10"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	       
+	            
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_taxnamber"
+	                style="@style/style_input_txt" android:text="税务证号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_taxnumber"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	        
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ispaytax"
+	                style="@style/style_input_txt" android:text="有无纳税"/>
+	            <include layout="@layout/ty_input_split"/>	            
+	            <EditText android:id="@+id/edit_ispaytax"
+		             style="@style/style_input_right"/>	            
+	        </LinearLayout>
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_changearea"
+	                style="@style/style_input_txt" android:text="住改非面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_changearea"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	            
+	        </LinearLayout>
+	        
+	          
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ismortgage"
+	                style="@style/style_input_txt" android:text="被征收房屋及土地是否设置抵押"/>
+	            <include layout="@layout/ty_input_split"/>	            
+	            <EditText android:id="@+id/edit_ismortgage"
+		             style="@style/style_input_right"/>	            
+	        </LinearLayout>
+	        
+	          
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_mortgagedetail"
+	                style="@style/style_input_txt" android:text="具体情况"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_mortgagedetail"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_isclose"
+	                style="@style/style_input_txt" android:text="被征收房屋及土地是否被查封"/>
+	            <include layout="@layout/ty_input_split"/>	            
+	            <EditText android:id="@+id/edit_isclose"
+		             style="@style/style_input_right"/>	            
+	        </LinearLayout>
+	          
+	          <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_closedetail"
+	                style="@style/style_input_txt" android:text="具体情况"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_closedetail"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	   
+	         
+        <LinearLayout android:id="@+id/linear_change"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">
+        
+	        <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_single_item">
+	            <TextView style="@style/style_input_txt" android:text="备注"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_remark" 
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	         </LinearLayout>
+	         
+          <LinearLayout android:id="@+id/linear_maininquirer"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">
+	        
+	         <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_single_item">
+	            <TextView style="@style/style_input_txt_blue" 
+	                android:text="主调查人"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_maininquirer_x218"
+	               style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	         </LinearLayout>
+        
+        
+	    </LinearLayout>
+    </LinearLayout>      
+    </ScrollView>
+   

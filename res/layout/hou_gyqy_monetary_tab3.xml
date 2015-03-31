@@ -1,0 +1,443 @@
+<!--补偿计算单-国有企业-货币补偿
+-->
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hou_gyqy_monetary_tab3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+       <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">	 	        
+           
+           <LinearLayout android:id="@+id/linear_txt_mon3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">        
+	            <TextView style="@style/style_input_txt_1" 
+	                 android:layout_marginLeft="5dp"
+	                android:textColor="@color/bluegreen"
+	                android:text="三、乙方在甲方规定期限内签约、搬家、交房的，甲方给予乙方如下奖励和补助"/>	                      
+	        </LinearLayout>           
+                  
+           
+	        <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_risesubsidy"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="选择货币上浮补助费"/>
+	        </LinearLayout>	  
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x7_4"
+	                android:text="结构(x7)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x7_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x20"
+	                android:text="面积(㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x20"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x14_3"
+	                android:text="单价(元/㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x14_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_percent_x32_1"
+	                android:text="百分比(%)"
+	                style="@style/style_input_txt_color" />
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_percent_x111"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x33"
+	                android:text="合计(元)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x33"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x8_4"
+	                android:text="结构(x8)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x8_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x21"
+	                android:text="面积(㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x21"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x15_3"
+	                android:text="单价(元/㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x15_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_percent_x32_2"
+	                android:text="百分比(%)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_percent_x111_2"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x34"
+	                android:text="合计(元)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x34"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x81_4"
+	                android:text="结构(x81)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x81_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x22"
+	                android:text="面积(㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x22"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x16_3"
+	                android:text="单价(元/㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x16_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_percent_x32_3"
+	                android:text="百分比(%)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_percent_x111_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x35"
+	                android:text="合计(元)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x35"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        
+	        
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x84_4"
+	                android:text="结构(x84)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x84_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x37"
+	                android:text="面积(㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x37"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x38_3"
+	                android:text="单价(元/㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x38_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_percent_x32_4"
+	                android:text="百分比(%)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_percent_x111_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x36"
+	                android:text="合计(元)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x36"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        
+	        
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x200_4"
+	                android:text="结构(x200)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x200_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x206"
+	                android:text="面积(㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x206"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x204_3"
+	                android:text="单价(元/㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x204_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_percent_x32_5"
+	                android:text="百分比(%)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_percent_x111_5"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x210"
+	                android:text="合计(元)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x210"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        
+	        
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x201_4"
+	                android:text="结构(x201)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x201_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x207"
+	                android:text="面积(㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x207"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x205_3"
+	                android:text="单价(元/㎡)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x205_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_percent_x32_6"
+	                android:text="百分比(%)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_percent_x111_6"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x211"
+	                android:text="合计(元)"
+	                style="@style/style_input_txt" />
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x211"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          
+	                
+	                <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_anqi"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="按期签约搬家奖励费"/>
+	        </LinearLayout>	
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_cost_x39"
+	                style="@style/style_input_txt_color" 
+	                android:text="费用(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_cost_x39"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	               
+	                
+	                <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_jiangli"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="奖励"/>
+	        </LinearLayout>	
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_cost_x168"
+	                style="@style/style_input_txt_color" 
+	                android:text="费用(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_cost_x168"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	                	         
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_buzhu"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="补助"/>
+	        </LinearLayout>	
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_cost_x169"
+	                style="@style/style_input_txt_color" 
+	                android:text="费用(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_cost_x169"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	                	       
+	          
+	          <!--  3月18日新需求，删除国有企业货币X52_011，我隐藏了未删除，鬼才知道以后会不会又改回来。。
+	          
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_xiaoji"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="小计"/>
+	        </LinearLayout>	
+	          <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_cost_x52"
+	                style="@style/style_input_txt" 
+	                android:text="费用(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_cost_x52"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          -->
+	          
+	          
+	                
+	    </LinearLayout>
+    </LinearLayout>      
+    </ScrollView>
+           

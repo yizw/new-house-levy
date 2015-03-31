@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+     <include layout="@layout/ty_title_bar"/>
+    
+    
+     
+      <LinearLayout android:id="@+id/linear_txt_proregister"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">        
+	            <TextView style="@style/style_input_txt_1" 
+	                  android:layout_marginLeft="5dp"
+	                android:textColor="@color/bluegreen"
+	                android:text="房屋产权手续登记"/>	                      
+	        </LinearLayout>    
+     
+    
+	        
+	        <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_prono"
+	                style="@style/style_input_txt" android:text="产权证号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prono"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_pronature"
+	                style="@style/style_input_txt" android:text="产权属性"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_pronature"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prouse"
+	                style="@style/style_input_txt" android:text="用途"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prouse"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout style="@style/style_input_linear"  android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_proarea"
+	                style="@style/style_input_txt" android:text="面积"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_proarea"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	           
+	           
+	            <LinearLayout android:id="@+id/linear_txt_buildregister"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">        
+	            <TextView style="@style/style_input_txt_1" 
+	                  android:layout_marginLeft="5dp"
+	                android:textColor="@color/bluegreen"
+	                android:text="建房手续登记"/>	                      
+	        </LinearLayout>  
+	           
+	           
+	           
+	          <LinearLayout style="@style/style_input_linear"  android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_approveno"
+	                style="@style/style_input_txt" android:text="批准文件号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_approveno"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_approvedepart"
+	                style="@style/style_input_txt" android:text="批准部门"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_approvedepart"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_approvearea"
+	                style="@style/style_input_txt" android:text="批准建设面积"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_approvearea"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>         
+	          
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ismortgage"
+	                style="@style/style_input_txt" android:text="被征收房屋及土地是否设置抵押"/>
+	            <include layout="@layout/ty_input_split"/>	            
+	            <EditText android:id="@+id/edit_ismortgage"
+		             style="@style/style_input_right"/>	            
+	        </LinearLayout>
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_mortsituation"
+	                style="@style/style_input_txt" android:text="具体情况"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_specsituation"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_isclose"
+	                style="@style/style_input_txt" android:text="被征收房屋及土地是否被查封"/>
+	            <include layout="@layout/ty_input_split"/>	            
+	            <EditText android:id="@+id/edit_isclose"
+		             style="@style/style_input_right"/>	            
+	        </LinearLayout>
+	        
+	         <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_last_item"> 
+	            <TextView android:id="@+id/txt_closesituation"
+	                style="@style/style_input_txt" android:text="具体情况"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_closesituation"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+     
+     
+     
+    
+</LinearLayout>

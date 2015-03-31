@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/total_push_info"
+    android:orientation="vertical" >
+    
+   <include layout="@layout/ty_title_bar"/>
+
+
+ <ScrollView  
+    android:id="@+id/household_push_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+       <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:orientation="vertical">
+	        
+      
+	        <LinearLayout style="@style/style_input_linear" android:id="@+id/txt_title"
+	            android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/text_title"
+	                style="@style/style_input_txt" 
+	                android:textColor="@color/red"
+	                android:text="标题"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_title"
+	                android:inputType="number"	                
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_content"
+	                style="@style/style_input_txt"
+	                android:text="内容"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_content"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_finishdate"
+	                style="@style/style_input_txt"
+	                android:textColor="@color/red"
+	                android:text="完成时间"/>
+	            <include layout="@layout/ty_input_split"/>
+	             <Button android:id="@+id/btn_finishdate"
+			       style="@style/style_input_right" 
+		           android:background="@drawable/set"/>	
+	        </LinearLayout>
+	        
+	        <LinearLayout style="@style/style_input_linear"
+                android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_status"
+	                style="@style/style_input_txt" 
+	                android:text="状态"/>
+	            <include layout="@layout/ty_input_split"/>	            
+	            <Spinner android:id="@+id/sp_status"
+		             style="@style/style_input_right" 
+		        android:background="@drawable/set"/>	            
+	        </LinearLayout>
+	        
+        
+	    </LinearLayout>
+    </LinearLayout>      
+    </ScrollView>
+</LinearLayout>

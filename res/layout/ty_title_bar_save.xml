@@ -1,0 +1,46 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_title"
+	android:orientation="horizontal" 
+	android:background="@color/bluetwo" 
+	android:layout_width="fill_parent" 
+	android:layout_height="48dp"
+	android:gravity="center_vertical">
+	
+    <Button android:id="@+id/btn_title_left"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_marginLeft="10dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_style_return"  
+        android:textSize="18sp"/>
+    
+    
+    <TextView android:id="@+id/txt_title_name"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:gravity="center_horizontal"
+        android:text="测试测试"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>	  
+        
+          
+    <RelativeLayout 
+        android:id="@+id/tab1_right_layout"
+        android:layout_width="45dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">        
+    <Button 
+        android:id="@+id/btn_title_right"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_marginRight="10dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_style_save" 
+        android:textSize="18sp"/>
+    </RelativeLayout>
+</LinearLayout>

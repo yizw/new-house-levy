@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<TextView android:text="这是显示通知详细信息的页面" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<Button android:id="@+id/btn" android:text="关掉通知"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

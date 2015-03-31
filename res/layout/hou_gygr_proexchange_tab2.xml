@@ -1,0 +1,2772 @@
+<!--补偿计算单-国有个人-产权调换
+-->
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hou_gygr_proexchange_tab2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+       <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">	    
+	        
+           <LinearLayout android:id="@+id/linear_txt_propertyhouse"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">        
+	            <TextView style="@style/style_input_txt_1" 
+	                 android:layout_marginLeft="5dp"
+	                android:textColor="@color/bluegreen"
+	                android:text="二、产权调换房屋"/>	                      
+	        </LinearLayout>          
+	        
+               
+	      <LinearLayout style="@style/style_input_linear"  android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_house1"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="产权调换房（现房）"/>
+	        </LinearLayout>	  
+	                    
+                  
+	      
+	      <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice1">
+	            <TextView android:id="@+id/txt_house_choice_1"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_1"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	             <Button android:id="@+id/btn_housedelete_1"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	      
+	      
+	      
+            
+            <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housetotalarea">
+	            <TextView android:id="@+id/txt_house_x17_1"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_1"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_1"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_1"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x20"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x20"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x21"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x21"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x22"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x22"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x23"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x23"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x24"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x24"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x600"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x600"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	       
+	           <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice2">
+	            <TextView android:id="@+id/txt_house_choice_2"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_2"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	             <Button android:id="@+id/btn_housedelete_2"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	          
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x17_2"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_2"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18_2"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_2"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19_2"
+	                style="@style/style_input_txt_color" android:text="评估价值"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_2"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x25"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x25"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x26"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x26"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x27"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x27"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x28"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x28"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x29"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x29"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x601"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x601"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	           <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice3">
+	            <TextView android:id="@+id/txt_house_choice_3"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_3"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	             <Button android:id="@+id/btn_housedelete_3"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	          
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x17_3"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18_3"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19_3"
+	                style="@style/style_input_txt_color" android:text="评估价值"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_3"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x30"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x30"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x31"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x31"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x32"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x32"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x33"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x33"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x34"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x34"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x602"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x602"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	      
+	           <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice4">
+	            <TextView android:id="@+id/txt_house_choice_4"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_4"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	             <Button android:id="@+id/btn_housedelete_4"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	          
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x17_4"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18_4"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19_4"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_4"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x35"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x35"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x36"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x36"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x37"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x37"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x38"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x38"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x39"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x39"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	            
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x603"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x603"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	            
+	             
+	             
+	             
+	              
+	          <!-- 以下为3月12日添加的6套现房，和前面的加起来共10套，编号为05,06,07,08,09,010 -->
+	          
+	          <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice05">
+	            <TextView android:id="@+id/txt_house_choice_05"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_05"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	              <Button android:id="@+id/btn_housedelete_05"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	          
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x17_5"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_5"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18_5"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_5"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19_5"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_5"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x900"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x900"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x902"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x902"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x903"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x903"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x904"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x904"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x905"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x905"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x608"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x608"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	          
+	          
+	          
+	          
+	          
+	          
+	            <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice06">
+	            <TextView android:id="@+id/txt_house_choice_06"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_06"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	              <Button android:id="@+id/btn_housedelete_06"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	          
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x17_6"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_6"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18_6"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_6"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19_6"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_6"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x906"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x906"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x907"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x907"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x908"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x908"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x909"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x909"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x910"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x910"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x609"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x609"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	          
+	          
+	               <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice07">
+	            <TextView android:id="@+id/txt_house_choice_07"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_07"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	              <Button android:id="@+id/btn_housedelete_07"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	          
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x17_7"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_7"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18_7"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_7"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19_7"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_7"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x911"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x911"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x912"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x912"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x913"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x913"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x914"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x914"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x915"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x915"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x610"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x610"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	          
+	          
+	          
+	          
+	               <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice08">
+	            <TextView android:id="@+id/txt_house_choice_08"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_08"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	              <Button android:id="@+id/btn_housedelete_08"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	          
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x17_8"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_8"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18_8"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_8"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19_8"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_8"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x916"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x916"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x917"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x917"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x918"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x918"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x919"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x919"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x920"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x920"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x611"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x611"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	               <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice09">
+	            <TextView android:id="@+id/txt_house_choice_09"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_09"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	              <Button android:id="@+id/btn_housedelete_09"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	          
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x17_9"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_9"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18_9"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_9"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19_9"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_9"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x921"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x921"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x922"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x922"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x923"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x923"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x924"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x924"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x925"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x925"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x612"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x612"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	               <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice010">
+	            <TextView android:id="@+id/txt_house_choice_010"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_010"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	              <Button android:id="@+id/btn_housedelete_010"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	          
+	            <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x17_10"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x17_10"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x18_10"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x18_10"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x19_10"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x19_10"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x926"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x926"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x927"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x927"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x928"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x928"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x929"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x929"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x930"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x930"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x613"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x613"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	             
+	            
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house2"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="产权调换房（期房）"/>
+	        </LinearLayout>	  
+	            
+	            
+	             <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice5">
+	            <TextView android:id="@+id/txt_house_choice_5"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_5"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	             <Button android:id="@+id/btn_housedelete_5"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	            
+	            
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_1"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_1"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_1"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_1"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_1"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_1"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x43"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x43"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x44"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x44"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x45"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x45"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x46"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x46"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x47"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x47"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x604"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x604"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	            
+	             <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice6">
+	            <TextView android:id="@+id/txt_house_choice_6"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_6"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	             <Button android:id="@+id/btn_housedelete_6"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	            
+	            
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_2"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_2"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_2"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_2"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_2"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_2"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x48"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x48"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x49"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x49"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x50"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x50"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x51"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x51"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x52"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x52"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x605"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x605"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	            
+	             <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice7">
+	            <TextView android:id="@+id/txt_house_choice_7"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_7"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	             <Button android:id="@+id/btn_housedelete_7"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	            
+	          
+	          
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_3"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_3"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_3"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_3"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x53"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x53"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x54"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x54"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x55"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x55"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x56"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x56"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x57"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x57"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	      
+	          
+	           <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_x606"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x606"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	           <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice8">
+	            <TextView android:id="@+id/txt_house_choice_8"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_8"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>
+	            
+	             <Button android:id="@+id/btn_housedelete_8"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>		
+	        </LinearLayout>	 
+	        
+	          
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_4"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_4"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_4"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_4"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_4"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x58"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x58"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x59"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x59"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x60"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x60"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x61"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x61"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_area_x62"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x62"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	           <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_x607"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x607"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	           <!-- 以下为3月12日添加的6套期房，和前面的加起来共10套，编号为9,10,11,12,13,14， -->   
+	          
+	            
+	           <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice9">
+	            <TextView android:id="@+id/txt_house_choice_9"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_9"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	            <Button android:id="@+id/btn_housedelete_9"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_5"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_5"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_5"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_5"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_5"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_5"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x931"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x931"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x932"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x932"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x933"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x933"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x934"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x934"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_area_x935"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x935"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	              <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_x614"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x614"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	          
+	          
+	          
+	          
+	           <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice10">
+	            <TextView android:id="@+id/txt_house_choice_10"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_10"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	            <Button android:id="@+id/btn_housedelete_10"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_6"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_6"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_6"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_6"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_6"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_6"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x936"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x936"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x937"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x937"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x938"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x938"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x939"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x939"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_area_x940"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x940"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_x615"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x615"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	          
+	          
+	             <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice11">
+	            <TextView android:id="@+id/txt_house_choice_11"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_11"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	            <Button android:id="@+id/btn_housedelete_11"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_7"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_7"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_7"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_7"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_7"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_7"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x941"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x941"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x942"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x942"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x943"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x943"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x944"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x944"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_area_x945"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x945"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_x616"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x616"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	          
+	          
+	          
+	          
+	            <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice12">
+	            <TextView android:id="@+id/txt_house_choice_12"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_12"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	            <Button android:id="@+id/btn_housedelete_12"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_8"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_8"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_8"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_8"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_8"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_8"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x946"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x946"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x947"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x947"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x948"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x948"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x949"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x949"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_area_x950"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x950"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_x617"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x617"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	          
+	          
+	          
+	              <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice13">
+	            <TextView android:id="@+id/txt_house_choice_13"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_13"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	            <Button android:id="@+id/btn_housedelete_13"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_9"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_9"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_9"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_9"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_9"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_9"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x951"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x951"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x952"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x952"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x953"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x953"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x954"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x954"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_area_x955"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x955"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	          
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_x618"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x618"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	          
+	          
+	                <LinearLayout style="@style/style_input_linear" 
+                android:id="@+id/linear_housechoice14">
+	            <TextView android:id="@+id/txt_house_choice_14"
+	                style="@style/style_input_txt" android:text="选房"/>
+	            <include layout="@layout/ty_input_split"/>
+	            
+	            <Button android:id="@+id/btn_housechoice_14"
+		                android:textSize="16sp"
+		                android:text="选择"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+		                
+	            <Button android:id="@+id/btn_housedelete_14"
+		                android:textSize="16sp"
+		                android:text="删除"
+		                android:textColor = "@color/bluegreen"
+		                style="@style/style_input_right"/>	
+	        </LinearLayout>	 
+	          
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x40_10"
+	                style="@style/style_input_txt" android:text="产权调换项目名称及评估价"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x40_10"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	        	
+	          
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housetype_x41_10"
+	                style="@style/style_input_txt" android:text="性质"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_existhouse_x41_10"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x42_10"
+	                style="@style/style_input_txt_color" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x42_10"
+	                android:inputType="numberDecimal"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x956"
+	                style="@style/style_input_txt" android:text="楼栋"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x956"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	        
+	          
+	       
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x957"
+	                style="@style/style_input_txt" android:text="单元"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x957"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x958"
+	                style="@style/style_input_txt" android:text="楼层"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x958"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_house_x959"
+	                style="@style/style_input_txt" android:text="房号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_house_x959"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>		         
+	         
+	          <LinearLayout style="@style/style_input_linear" >
+	            <TextView android:id="@+id/txt_area_x960"
+	                style="@style/style_input_txt" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_area_x960"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	           
+	           
+	           
+	           <LinearLayout style="@style/style_input_linear" android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_x619"
+	                style="@style/style_input_txt_color" android:text="产权调换房屋公摊系数"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_x619"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	           
+	      
+	     <LinearLayout android:id="@+id/linear_txt_prohousehandle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="5dp">        
+	            <TextView style="@style/style_input_txt_1" 
+	                 android:layout_marginLeft="5dp"
+	                android:textColor="@color/bluegreen"
+	                android:text="三、产权调换房屋大于或小于被征收房屋时的处理"/>	                      
+	        </LinearLayout>     
+	          
+	          
+	                  <LinearLayout style="@style/style_input_linear"  android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_prohousearea_x63"
+	                style="@style/style_input_txt" android:text="产权调换房面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_prohouseaera_x63"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	                  
+	                  
+	                    <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x64"
+	                style="@style/style_input_txt_color" android:text="超安面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x64input"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	                
+	                
+	                    
+	                    
+	                  <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_houseareagreater"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="产权调换房面积大于被征收房屋有证或确权建筑面积"/>
+	        </LinearLayout>	  
+	                    
+	                    
+	                    
+	                    
+	                  <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x65"
+	                style="@style/style_input_txt_color" android:text="超过面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x65"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	   
+	                    
+	                 <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x66"
+	                style="@style/style_input_txt_color" android:text="面积单价(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x66"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	      
+	                    
+	                   <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x67"
+	                style="@style/style_input_txt" android:text="价值(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x67"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	  
+	                 
+	              
+	                 <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x68"
+	                style="@style/style_input_txt_color" android:text="超过面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x68"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	   
+	                    
+	                 <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x69_1"
+	                style="@style/style_input_txt_color" android:text="面积单价(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_value_x69_1"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	      
+	        
+	                   <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_percent_x70"
+	                style="@style/style_input_txt_color" android:text="折扣(%)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_percent_x70"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	                 
+	                    
+	                   <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x71"
+	                style="@style/style_input_txt" android:text="金额(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x71"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	     
+	                   
+	                   
+	                    <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x72"
+	                style="@style/style_input_txt_color" android:text="超过面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x72"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	   
+	                    
+	                 <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x69_2"
+	                style="@style/style_input_txt" android:text="面积单价(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x69_2"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	      
+	        
+	                   <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_percent_x74"
+	                style="@style/style_input_txt_color" android:text="折扣(%)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_percent_x74"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	                 
+	                    
+	                   <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x75"
+	                style="@style/style_input_txt" android:text="金额(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_prohouseaera_x75"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	  
+	                   
+	                   
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x76"
+	                style="@style/style_input_txt" android:text="合计(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x76"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	             
+	             
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_housearealess"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="产权调换房面积小于被征收房屋有证或确权建筑面积"/>
+	        </LinearLayout>	  
+	             
+	             
+	             
+	             
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x7_3"
+	                style="@style/style_input_txt" android:text="结构(x7)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x7_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x77"
+	                style="@style/style_input_txt_color" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x77"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ass_value_x14_3"
+	                style="@style/style_input_txt" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_ass_value_x14_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x78"
+	                style="@style/style_input_txt" android:text="合计(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x78"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	              
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x8_3"
+	                style="@style/style_input_txt" android:text="结构(x8)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x8_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x79"
+	                style="@style/style_input_txt_color" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x79"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ass_value_x15_3"
+	                style="@style/style_input_txt" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_ass_value_x15_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x80"
+	                style="@style/style_input_txt" android:text="合计(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x80"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x81_3"
+	                style="@style/style_input_txt" android:text="结构(x81)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x81_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x82"
+	                style="@style/style_input_txt_color" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x82"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ass_value_x16_3"
+	                style="@style/style_input_txt" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_ass_value_x16_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x83"
+	                style="@style/style_input_txt" android:text="合计(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x83"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	              
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x84_3"
+	                style="@style/style_input_txt" android:text="结构(x84)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x84_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x85"
+	                style="@style/style_input_txt_color" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x85"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ass_value_x86_3"
+	                style="@style/style_input_txt" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_ass_value_x86_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x87"
+	                style="@style/style_input_txt" android:text="合计(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x87"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	              
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x200_3"
+	                style="@style/style_input_txt" android:text="结构(x200)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x200_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x221"
+	                style="@style/style_input_txt_color" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x221"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ass_value_x204_3"
+	                style="@style/style_input_txt" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_ass_value_x204_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x206"
+	                style="@style/style_input_txt" android:text="合计(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x206"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	        
+	              
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_structure_x201_3"
+	                style="@style/style_input_txt" android:text="结构(x201)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_structure_x201_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_prohousearea_x222"
+	                style="@style/style_input_txt_color" android:text="面积(㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_prohouseaera_x222"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	             <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_ass_value_x205_3"
+	                style="@style/style_input_txt" android:text="评估价值(元/㎡)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_ass_value_x205_3"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	             
+	             
+	             
+	              <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_value_x207"
+	                style="@style/style_input_txt" android:text="合计(元)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <TextView android:id="@+id/text_value_x207"
+	                android:textColor="@color/bluegreen"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	              
+	                <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_percent1"
+	                style="@style/style_input_txt_1"
+	                android:textColor="@color/bluegreen"
+	                android:textSize="16dp"
+	                android:text="房屋所有权证载明用途为商业（或营业）、办公或其他的，被征收房屋建筑面积上浮"/>	                         
+	        </LinearLayout>	  
+	          
+	             <LinearLayout style="@style/style_input_linear"  android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_percent_x300"
+	                style="@style/style_input_txt_color" 
+	                android:text="百分比(%)"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_percent_x300"
+	                android:textColor="@color/bluegreen"
+	                android:inputType="numberDecimal"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	
+	  
+	    </LinearLayout>
+    </LinearLayout>      
+    </ScrollView>
+
+

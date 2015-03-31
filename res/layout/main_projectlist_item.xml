@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/conversation_id"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dip"
+    android:descendantFocusability="blocksDescendants">
+    
+    
+    <TextView android:id="@+id/txt_id"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+   
+     <TextView
+        android:id="@+id/p_id"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+     
+    
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_below="@id/linear_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip">
+               
+        <TextView android:id="@+id/txt_projecttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dip"
+            android:textColor="@color/bluegreen"
+            android:text="小河区浦江路至清水江路道路工程项目"/>
+       </LinearLayout>
+    
+    
+
+	    <LinearLayout
+	        android:id="@+id/layout_admin"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@id/layout_title"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="10dip">
+	        <TextView
+	            android:id="@+id/txt_specleader"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#5e6d8e"
+	            android:text="开发区分管领导："/>
+	        <TextView android:id="@+id/special_leader"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#2794e0"
+	            android:text="admin"/>
+	        <TextView
+	            android:id="@+id/txt_centerleader"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#5e6d8e"
+	            android:layout_marginLeft="25dip"
+	            android:text="中心分管领导："/>
+	        <TextView android:id="@+id/center_leader"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:ellipsize="marquee"
+	            android:marqueeRepeatLimit="marquee_forever"
+	            android:singleLine="true"
+	            android:textSize="12dip"
+	            android:textColor="#2794e0"
+	            android:text="admin"/>	        
+	    </LinearLayout>
+	    
+	 
+	    
+	    
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_manager"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@id/layout_admin"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="10dip">
+	        <TextView
+	            android:id="@+id/txt_projectmanage"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#5e6d8e"
+	            android:text="项目分管领导："/>
+	        <TextView android:id="@+id/project_manage"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#2794e0"
+	            android:text="黄杰"/>
+	        
+	        <TextView
+	            android:id="@+id/txt_projectdirector"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#5e6d8e"
+	            android:layout_marginLeft="25dip"
+	            android:text="项目部部长："/>
+	        <TextView android:id="@+id/project_director"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:ellipsize="marquee"
+	            android:marqueeRepeatLimit="marquee_forever"
+	            android:singleLine="true"
+	            android:textSize="12dip"
+	            android:textColor="#2794e0"
+	            android:text="朱勇飞"/>	        
+	    </LinearLayout>
+	    
+	    
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_begindate"	       
+	        android:layout_below="@id/layout_manager" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	        android:layout_alignParentLeft="true"	      
+	        android:orientation="horizontal"
+	        android:layout_marginTop="10dip"
+	        >	         
+	        <TextView	
+	            android:id="@+id/txt_projectdate"           
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#5e6d8e"
+	            android:text="项目起始日期："/>	        
+	        <TextView android:id="@+id/project_date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:ellipsize="end"
+	            android:textSize="12dip"
+	            android:textColor="#2794e0"
+	            android:text="2014-08-28"/>   
+	    </LinearLayout>
+	    
+	     
+	    
+	      
+	    <LinearLayout
+	        android:id="@+id/layout_householdnumber"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@id/layout_begindate"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="10dip">
+	        <TextView
+	            android:id="@+id/txt_guessnumber" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#5e6d8e"
+	            android:text="摸底户数："/>
+	        <TextView android:id="@+id/guess_number"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#2794e0"
+	            android:text="250"/>
+	        <TextView
+	            android:id="@+id/txt_signnumber" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12dip"
+	            android:textColor="#5e6d8e"
+	            android:layout_marginLeft="25dip"
+	            android:text="已签订户数："/>
+	        <TextView android:id="@+id/sign_number"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:ellipsize="marquee"
+	            android:marqueeRepeatLimit="marquee_forever"
+	            android:singleLine="true"
+	            android:textSize="12dip"
+	            android:textColor="#2794e0"
+	            android:text="120"/>	        
+	    </LinearLayout>
+	  
+	     
+	     
+	     
+</RelativeLayout>

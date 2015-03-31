@@ -1,0 +1,86 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/household_info_tab1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+       <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:orientation="vertical">
+	        
+      
+	        <LinearLayout style="@style/style_input_linear" android:id="@+id/txt_householdname"
+	            android:background="@drawable/preference_first_item">
+	            <TextView android:id="@+id/txt_changeregister"
+	                style="@style/style_input_txt" 
+	                android:textColor="@color/red"
+	                android:text="分户姓名"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_houseowner"	                                
+	                style="@style/style_input_right"/>
+	        </LinearLayout>	 
+	       
+	        <!--  
+	        	            
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_cartno"
+	                style="@style/style_input_txt"
+	                android:textColor="@color/red"
+	                android:text="身份证号"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_cartno"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	         -->
+	        
+	        <LinearLayout style="@style/style_input_linear"
+	              android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_householdtype"
+	                style="@style/style_input_txt" 
+	                android:textColor="@color/red"
+	                android:text="分户类型"/>
+	            <include layout="@layout/ty_input_split"/>	            
+	            <Spinner android:id="@+id/sp_householdtype"
+		             style="@style/style_input_right" 
+		        android:background="@drawable/set"/>	            
+	        </LinearLayout>
+	        
+	         <!-- 
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_linktel"
+	                style="@style/style_input_txt" android:text="联系方式"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_linktel"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout style="@style/style_input_linear">
+	            <TextView android:id="@+id/txt_address"
+	                style="@style/style_input_txt" android:text="住址"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_address"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	          
+	          <LinearLayout style="@style/style_input_linear"
+	              android:background="@drawable/preference_last_item">
+	            <TextView android:id="@+id/txt_remark"
+	                style="@style/style_input_txt" android:text="备注"/>
+	            <include layout="@layout/ty_input_split"/>
+	            <EditText android:id="@+id/edit_remark"
+	                style="@style/style_input_right"/>
+	        </LinearLayout>
+	         
+           -->
+	    </LinearLayout>
+    </LinearLayout>      
+    </ScrollView>

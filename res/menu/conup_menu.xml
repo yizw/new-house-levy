@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/add_issues"  
+		android:title="新增问题隐患"
+		android:enabled="true"
+		/>
+	<item
+		android:id="@+id/add_differences" 
+		android:title="新增矛盾纠纷" />
+	<item
+		android:id="@+id/add_apartment" 
+		android:title="新增出租屋隐患"> 
+	</item>
+	<item
+		android:id="@+id/exit_menu"
+		android:title="隐藏菜单" />
+</menu>
