@@ -2,7 +2,7 @@ package com.yizw.newhouselevy.Adapter;
 
 import java.util.LinkedHashMap;
 
-import com.yizw.newhouselevy.R;
+import com.example.newhouselevy.R;
 import com.yizw.newhouselevy.Business.PublicBus;
 import com.cogent.core.component.DataTableList;
 

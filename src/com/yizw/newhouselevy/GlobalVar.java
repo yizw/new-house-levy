@@ -1,34 +1,34 @@
 package com.yizw.newhouselevy;
 
-import com.yizw.newhouseLevy.Business.LoginBus;
-import com.yizw.newhouseLevy.Business.Sys_EnumBus;
+import com.yizw.newhouselevy.Business.LoginBus;
+import com.yizw.newhouselevy.Business.Sys_EnumBus;
 import com.cogent.core.util.ExceptionHelper;
 import com.cogent.core.util.FileHelper;
 import com.cogent.core.util.MyException;
 import com.cogent.core.util.StringHelper;
 import com.cogent.core.util.SystemInfo;
 
-/** х╚╬ж╠Да©*/
+/** х╚О©╫ж╠О©╫*/
 public class GlobalVar {
 	public class SP_KEY{
-		/**йб╪Ч*/
+		/**О©╫б╪О©╫*/
 		public static final String incident = "incident";
 	}
 	
-	/** хуж╬йДЁЖ╣дtag╠Йж╬*/	 
+	/** О©╫О©╫ж╬О©╫О©╫О©╫О©╫tagО©╫О©╫ж╬*/	 
 	public static final String TAG="PDA";
 	
-	/** ц╤╬ы╣дд╛хож╣*/
+	/** ц╤О©╫ы╣О©╫д╛О©╫О©╫ж╣*/
 	public static final String enum_defalut= "";	
 	
-	/** 0:сцю╢╩╨╢Ф╟╢е╔иот╜ю╢╣дндвж  1ё╨╡ывВй╖╟э╨Сотй╬╣дндвж*/
-	public static final String[] txt_btn = new String[]{"","жьпб╩Ях║"};
+	/** 0:О©╫О©╫4О©╫О©╫О©╫Ф╟╢е╔О©╫О©╫т╜4О©╫О©╫О©╫О©╫О©╫О©╫  1О©╫О©╫О©╫О©╫О©╫О©╫й╖О©╫э╨О©╫О©╫О©╫й╬О©╫О©╫О©╫О©╫О©╫О©╫*/
+	public static final String[] txt_btn = new String[]{"","О©╫О©╫О©╫б╩О©╫х║"};
 	
-	/** 0:уЩтз╪сть  1ё╨╪стьмЙЁи  2ё╨╪стьй╖╟э*/
-	public static String[] footerInfo = new String[]{"уЩтз╩Ях║жпё╛гКдмпд╣х╢Щр╩об╟и~","ря╬╜╪стьмЙЁиак~","╩Ях║й╖╟эакё╛гК╣Ц╩Вжьйт~"};
+	/** 0:О©╫О©╫О©╫з╪О©╫О©╫О©╫  1О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫  2О©╫О©╫О©╫О©╫О©╫О©╫й╖О©╫О©╫*/
+	public static String[] footerInfo = new String[]{"О©╫О©╫О©╫з╩О©╫х║О©╫пёО©╫О©╫О©╫О©╫О©╫О©╫д╣х╢О©╫р╩О©╫б╟О©╫~","О©╫я╬О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫~","О©╫О©╫х║й╖О©╫О©╫О©╫кёО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫~"};
 
 	private static String saveFolder = null;
-	/** ╩Ях║сцю╢╠ё╢Фхуж╬╣хпео╒╣дд╛хонд╪Ч╪пб╥╬╤<br/>в╒ё╨нд╪Ч╪пб╥╬╤вН╨Сря╪сио║╟/║╠ё╛хГё╨/sdcard/cogent/*/
+	/** О©╫О©╫х║О©╫О©╫4О©╫О©╫О©╫О©╫О©╫О©╫ж╬О©╫О©╫О©╫О©╫о╒О©╫О©╫д╛О©╫О©╫О©╫д╪О©╫О©╫О©╫б╥О©╫О©╫<br/>в╒О©╫О©╫О©╫д╪О©╫О©╫О©╫б╥О©╫О©╫О©╫О©╫О©╫О©╫я╪О©╫О©╫о║О©╫/О©╫О©╫О©╫О©╫О©╫Гё╨/sdcard/cogent/*/
 	public static String getSaveFolder(){
 		if(!StringHelper.isNullOrEmpty(saveFolder))
 			return saveFolder;
@@ -48,9 +48,9 @@ public class GlobalVar {
 		}
 	}
 	
-	/** гЕЁЩ╩╨╢Ф*/
+	/** О©╫О©╫О©╫О©╫*/
 	public static void clearCache(){
-		//╬╡л╛╤тоС╠ё╢Ф╣д╩╨╢Фё╛╡╩╩АкФвес╕сц╣д╧ь╠у╤ЬоЗ╩ыё╛об╢нфТ╤╞й╠©идэ╩╧йгиор╩╢н╣д
+		//О©╫О©╫л╛О©╫О©╫О©╫С╠ё╢О©╫д╩О©╫О©╫Фё╛О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫с╕О©╫ц╣д╧ь╠у╤О©╫О©╫О©╫ыёО©╫О©╫б╢О©╫О©╫О©╫й╠О©╫О©╫О©╫э╩О©╫О©╫О©╫О©╫О©╫р╩О©╫н╣О©╫
 		LoginBus.clearUSN();
 		Sys_EnumBus.ClearCache();
 		saveFolder = null;

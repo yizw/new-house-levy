@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Locale;
 
 import com.yizw.newhouselevy.GlobalVar;
-import com.yizw.newhouselevy.R;
+import com.example.newhouselevy.R;
 import com.yizw.newhouselevy.DAO.DatabaseHelper;
 import com.yizw.newhouselevy.Entity.SpinnerDomain;
 import com.cogent.core.component.SpinnerAdapterEx;

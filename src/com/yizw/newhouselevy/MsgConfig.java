@@ -1,8 +1,8 @@
 package com.yizw.newhouselevy;
 import android.content.Context;
 
-import com.yizw.houseLevy.Business.LoginBus;
-import com.yizw.houseLevy.Business.SysConfigBus;
+import com.yizw.newhouselevy.Business.LoginBus;
+import com.yizw.newhouselevy.Business.SysConfigBus;
 import com.cogent.core.msg.IUploadConfig;
 import com.cogent.core.util.MyException;
 

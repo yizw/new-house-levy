@@ -1,6 +1,6 @@
 package com.yizw.newhouselevy.UI;
 
-import com.yizw.newhouselevy.R;
+import com.example.newhouselevy.R;
 import com.yizw.newhouselevy.Business.PublicBus;
 import com.yizw.newhouselevy.DAO.DatabaseHelper;
 import com.cogent.core.util.MyException;

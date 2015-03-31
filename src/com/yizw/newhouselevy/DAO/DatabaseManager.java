@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import com.yizw.newhouselevy.GlobalVar;
-import com.yizw.newhouselevy.R;
+import com.example.newhouselevy.R;
 import com.cogent.core.util.ExceptionHelper;
 import com.cogent.core.util.FileHelper;
 import com.cogent.core.util.LogHelper;

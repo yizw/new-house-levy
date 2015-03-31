@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:drawable="@color/white" />  
+    <item android:state_focused="true" android:state_enabled="false" android:state_pressed="true" android:drawable="@drawable/listitem_disable" />
+    <item android:state_focused="true" android:state_enabled="false" android:drawable="@drawable/listitem_disable" />
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@color/bluetwo" />
+    <item android:state_focused="false" android:state_pressed="true" android:drawable="@color/bluetwo" />
+    <item android:state_focused="true" android:drawable="@color/bluetwo" />
+</selector> -->
+
+<selector
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="false" android:state_selected="false">
+		<shape android:shape="rectangle">
+			<solid android:color="#fff" />
+			<padding
+				android:left="10dp"
+				android:right="10dp"
+				android:top="5dp"
+				android:bottom="5dp" />
+		</shape>
+	</item>
+	<item>
+		<shape android:shape="rectangle">
+			<gradient android:type="linear"
+				android:angle="90"
+				android:startColor="#069"
+				android:endColor="#09f" />
+			<padding
+				android:left="10dp"
+				android:right="10dp"
+				android:top="5dp"
+				android:bottom="5dp" />
+		</shape>
+	</item>
+</selector>
