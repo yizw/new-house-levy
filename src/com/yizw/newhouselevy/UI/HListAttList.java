@@ -25,7 +25,9 @@ import com.cogent.core.component.DataTableList;
 import com.j256.ormlite.android.apptools.OrmLiteBaseActivity;
 import com.umeng.analytics.MobclickAgent;
 
-/*算单 附件一  列表*/
+/*算单 附件一  列表
+*author:yizw
+*/
 public class HListAttList extends OrmLiteBaseActivity<DatabaseHelper>{
 	
 	public class KEY{
