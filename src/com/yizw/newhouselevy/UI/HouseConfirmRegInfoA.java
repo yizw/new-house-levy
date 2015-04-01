@@ -22,7 +22,9 @@ import com.yizw.newhouselevy.DAO.DatabaseHelper;
 import com.yizw.newhouselevy.Entity.HouseConfirmReg;
 
 
-/*房屋调查确认表 -- 房屋产权手续登记信息页面*/
+/*房屋调查确认表 -- 房屋产权手续登记信息页面
+*author:yizw
+*/
 public class HouseConfirmRegInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
 
 	public class KEY{	
@@ -83,8 +85,6 @@ public class HouseConfirmRegInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
 		edit_closesituation = (EditText) findViewById(R.id.edit_closesituation);
 		edit_ismortgage = (EditText) findViewById(R.id.edit_ismortgage);
 		edit_isclose = (EditText) findViewById(R.id.edit_isclose);
-			
-			
 	}
 		
 	private Button initBtn(int id){
@@ -131,17 +131,6 @@ public class HouseConfirmRegInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
 	}
 	
 	public HouseConfirmReg getEntity(){
-//		if(isAdd){
-//			entity.setCreator(LoginBus.getLogin(this).getREALNAME());
-//			entity.setCreateddate(new Date());
-//		}
-//		else{
-//			entity.setModifier(LoginBus.getLogin(this).getREALNAME());
-//			entity.setModifydate(new Date());
-//		}
-		
-//		entity.setModifier(LoginBus.getLogin(this).getREALNAME());
-//		entity.setModifydate(new Date());
 		
 		entity.setC4(edit_prono.getText().toString());
 		entity.setC32(edit_pronature.getText().toString());
@@ -155,7 +144,6 @@ public class HouseConfirmRegInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
 		
 		entity.setC22(edit_ismortgage.getText().toString());
 		entity.setC24(edit_isclose.getText().toString()); 
-	 
 		
 		return entity;
 	}
