@@ -40,7 +40,9 @@ import com.yizw.newhouselevy.Entity.EnumCode;
 import com.yizw.newhouselevy.Entity.HouseConfirm;
 import com.yizw.newhouselevy.Entity.HouseList;
 
-/**分户--集体个人--产权--补偿计算单*/
+/**分户--集体个人--产权--补偿计算单
+*author:yizw
+*/
 public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 
 	public class KEY{
@@ -117,9 +119,8 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 	public HouseList entity;
 	public HouseConfirm c;
 	
-//	public HouseList jtgrproexchange;
 	
-	  /** 是否是新增确认信息*/
+    /** 是否是新增确认信息*/
     boolean isAdd = true;
     public String id,in_id,hid,pid,index,c_status,in_hid; 
     private Button btn_title_right;
@@ -205,7 +206,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
     
     private TextView 
     //tab1
-  //  text_cardno_x2,text_linktel_x3,
     
     text_contractno_x185,text_levyname_x1,text_maininquier_x218,text_levyaddress_x4,
     text_housetotalarea_x5,text_purpose_x6,text_structure_x7_1,text_area_x9,text_structure_x8_1,text_area_x10,
@@ -218,7 +218,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 	//tab2
     text_value_x69,
     text_prohouseaera_x63,
-    //text_prohouseaera_x64,
     text_value_x67,text_value_x71,
     text_prohouseaera_x75,text_value_x76,text_structure_x7_3,text_ass_value_x14_3,text_value_x78,text_structure_x8_3,
     text_ass_value_x15_3,text_value_x80,text_structure_x81_3,text_ass_value_x16_3,text_value_x83,text_structure_x84_3,
@@ -253,7 +252,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
     
     
     //tab3    
-  //  text_legalarea_x13_2,text_prohouseaera_x63_2,text_residuearea_x1363,
     text_cost_x90,text_cost_x92,
     text_cost_x94,text_cost_x97,
     text_cost_x99,text_cost_x101,
@@ -264,11 +262,9 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
     text_value_x86_4,text_cost_x118,text_structure_x200_4,text_value_x204_4,text_cost_x210,
     text_structure_x201_4,text_value_x205_4,text_cost_x211,
     
-    //text_value_x88_2, 
     text_value_x88_3,
     text_cost_x95_2,text_cost_x95_3,text_cost_x95_4,text_cost_x95_5,
     
-   // text_area_x47,text_area_x52,text_area_x57,text_area_x62,
     
     text_value_x132,text_value_x133,text_value_x134,
     text_value_x135,text_value_x142,text_value_x143,text_value_x144,
@@ -846,7 +842,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 
 		text_area_x46 = (TextView) findViewById(R.id.text_area_x46);
 
-	//	text_value_x88_2 = (TextView) findViewById(R.id.text_value_x88_2);
 		text_value_x88_3 = (TextView) findViewById(R.id.text_value_x88_3);
 		text_cost_x95_2 = (TextView) findViewById(R.id.text_cost_x95_2);
 		text_cost_x95_3 = (TextView) findViewById(R.id.text_cost_x95_3);
@@ -859,11 +854,8 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 		text_rise_x111_5 = (TextView) findViewById(R.id.text_rise_x111_5);
 		text_rise_x111_6 = (TextView) findViewById(R.id.text_rise_x111_6);
 
-	//	text_legalarea_x13_2 = (TextView) findViewById(R.id.text_legalarea_x13_2);
 		text_cost_x90 = (TextView) findViewById(R.id.text_cost_x90);
-	//	text_prohouseaera_x63_2 = (TextView) findViewById(R.id.text_prohouseaera_x63_2);
 		text_cost_x92 = (TextView) findViewById(R.id.text_cost_x92);
-	//	text_residuearea_x1363 = (TextView) findViewById(R.id.text_residuearea_x1363);
 		text_cost_x94 = (TextView) findViewById(R.id.text_cost_x94);
 		text_cost_x97 = (TextView) findViewById(R.id.text_cost_x97);
 		text_cost_x99 = (TextView) findViewById(R.id.text_cost_x99);
@@ -996,8 +988,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 			entity = new HouseList();
 			c = new HouseConfirm();
 
-//			JTGRProAsyncTask task = new JTGRProAsyncTask(activity);
-//			task.execute(in_id);
 			setEntityToUI(entity, c);
 
 		} else {
@@ -1027,8 +1017,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 		edit_cardno_x2.setText(entity.getX2());
 		edit_linktel_x3.setText(entity.getX3());
 		
-//		text_cardno_x2.setText(entity.getX2());
-//		text_linktel_x3.setText(entity.getX3());
 		text_contractno_x185.setText(entity.getX185());
 		text_levyname_x1.setText(c.getX1());
 		text_maininquier_x218.setText(c.getX218());
@@ -1918,71 +1906,14 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 		// tab2
 		entity.setX64input(StringToDouble(edit_prohouseaera_x64.getText().toString()));    
 		
-		
-//		entity.setX17_1(edit_house_x17_1.getText().toString());
-//		entity.setX18_1(edit_existhouse_x18_1.getText().toString());
 		entity.setX19_1(StringToDouble(edit_value_x19_1.getText().toString()));
-//		entity.setX20(edit_house_x20.getText().toString());
-//		entity.setX21(edit_house_x21.getText().toString());
-//		entity.setX22(edit_house_x22.getText().toString());		
-//		entity.setX23(edit_house_x23.getText().toString());
-//		entity.setX24(StringToDouble(edit_area_x24.getText().toString()));
-//		entity.setX17_2(edit_house_x17_2.getText().toString());
-//		entity.setX18_2(edit_existhouse_x18_2.getText().toString());
 		entity.setX19_2(StringToDouble(edit_value_x19_2.getText().toString()));
-//		entity.setX25(edit_house_x25.getText().toString());		
-//		entity.setX26(edit_house_x26.getText().toString());
-//		entity.setX27(edit_house_x27.getText().toString());
-//		entity.setX28(edit_house_x28.getText().toString());
-//		entity.setX29(StringToDouble(edit_area_x29.getText().toString()));
-//		entity.setX17_3(edit_house_x17_3.getText().toString());
-//		entity.setX18_3(edit_existhouse_x18_3.getText().toString());
 	    entity.setX19_3(StringToDouble(edit_value_x19_3.getText().toString()));
-//		entity.setX30(edit_house_x30.getText().toString());
-//		entity.setX31(edit_house_x31.getText().toString());
-//		entity.setX32(edit_house_x32.getText().toString());
-//		entity.setX33(edit_house_x33.getText().toString());
-//		entity.setX34(StringToDouble(edit_area_x34.getText().toString()));		
-//		entity.setX17_4(edit_house_x17_4.getText().toString());
-//		entity.setX18_4(edit_existhouse_x18_4.getText().toString());
 		entity.setX19_4(StringToDouble(edit_value_x19_4.getText().toString()));
-//		entity.setX35(edit_house_x35.getText().toString());
-//		entity.setX36(edit_house_x36.getText().toString());
-//		entity.setX37(edit_house_x37.getText().toString());
-//		entity.setX38(edit_house_x38.getText().toString());
-//		entity.setX39(StringToDouble(edit_area_x39.getText().toString()));
-//		entity.setX40_1(edit_house_x40_1.getText().toString());
-//		entity.setX41_1(edit_existhouse_x41_1.getText().toString());
 		entity.setX42_1(StringToDouble(edit_value_x42_1.getText().toString()));
-//		entity.setX43(edit_house_x43.getText().toString());
-//		entity.setX44(edit_house_x44.getText().toString());
-//		entity.setX45(edit_house_x45.getText().toString());
-//		entity.setX46(edit_house_x46.getText().toString());
-//		entity.setX47(StringToDouble(edit_area_x47.getText().toString()));
-//		entity.setX40_2(edit_house_x40_2.getText().toString());
-//		entity.setX41_2(edit_existhouse_x41_2.getText().toString());
 		entity.setX42_2(StringToDouble(edit_value_x42_2.getText().toString()));
-//		entity.setX48(edit_house_x48.getText().toString());
-//		entity.setX49(edit_house_x49.getText().toString());
-//		entity.setX50(edit_house_x50.getText().toString());
-//		entity.setX51(edit_house_x51.getText().toString());
-//		entity.setX52(StringToDouble(edit_area_x52.getText().toString()));		
-//		entity.setX40_3(edit_house_x40_3.getText().toString());
-//		entity.setX41_3(edit_existhouse_x41_3.getText().toString());
 		entity.setX42_3(StringToDouble(edit_value_x42_3.getText().toString()));
-//		entity.setX53(edit_house_x53.getText().toString());
-//		entity.setX54(edit_house_x54.getText().toString());
-//		entity.setX55(edit_house_x55.getText().toString());
-//		entity.setX56(edit_house_x56.getText().toString());
-//		entity.setX57(StringToDouble(edit_area_x57.getText().toString()));
-//		entity.setX40_4(edit_house_x40_4.getText().toString());
-//		entity.setX41_4(edit_existhouse_x41_4.getText().toString());
 		entity.setX42_4(StringToDouble(edit_value_x42_4.getText().toString()));
-//		entity.setX58(edit_house_x58.getText().toString());
-//		entity.setX59(edit_house_x59.getText().toString());
-//		entity.setX60(edit_house_x60.getText().toString());
-//		entity.setX61(edit_house_x61.getText().toString());
-//		entity.setX62(StringToDouble(edit_area_x62.getText().toString()));
 		
 	    
 	    entity.setX19_5(StringToDouble(edit_value_x19_5.getText().toString()));
@@ -2174,39 +2105,7 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 			}
 			 
 		 }
-	
-	
-	
-	
-	
-
-	 public void loadingHouse1Data(){
-//		 GYGRFamilyRegListAsyncTask task = new GYGRFamilyRegListAsyncTask(activity);
-//		 task.execute();
-	 }
-	 
-	 public void loadingHouse2Data(){
-
-	 }
-	 public void loadingHouse3Data(){
-
-	 }
-	 public void loadingHouse4Data(){
-
-	 }
-	 public void loadingHouse5Data(){
-
-	 }
-	 public void loadingHouse6Data(){
-
-	 }
-	 public void loadingHouse7Data(){
-
-	 }
-	 public void loadingHouse8Data(){
-
-	 }
-	
+         
 	 // @Override
 		protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 			super.onActivityResult(requestCode, resultCode, data);
@@ -2287,9 +2186,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 			case requestCode_house26:
 				requestCode_house(resultCode,data,"26");
 				break;		
-				
-				
-				
 				
 				
 			case requestCode_housedelete31:
@@ -2392,11 +2288,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 			operateIntent();
 		}
 		
-//	private void requestCode_house8(int resultCode,Intent data){
-//		if(resultCode!=RESULT_OK)
-//			return;	
-//		loadingHouse8Data();
-//	}
 	
 	
 	class OnClick implements View.OnClickListener {
@@ -2586,15 +2477,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 		}
 		
 		
-
-//		void Onclick_btn_housechoice(int index) {
-//				Intent intent = new Intent(activity, HouseNameListA.class);
-//				intent.putExtra(HouseNameListA.KEY.in_id, entity.getId());
-//				intent.putExtra(HouseNameListA.KEY.in_index,""+index);  
-//			 	activity.startActivityForResult(intent,index);
-//		}
-
-		
 		void Onclick_btn_housechoice(int index) {
 				Intent intent = new Intent(activity, HouseNameListA.class);
 		    	intent.putExtra(HouseNameListA.KEY.in_id, entity.getId());
@@ -2603,11 +2485,6 @@ public class JTGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 	    	
           }
 		
-		
-//		void Onclick_btn_housedelete(String hid1) {	 
-//			HouseRoomInfoDeleteAsyncTask task = new HouseRoomInfoDeleteAsyncTask(activity,hid1);
-//			task.execute("");
-//           }
 		
 		
 		
