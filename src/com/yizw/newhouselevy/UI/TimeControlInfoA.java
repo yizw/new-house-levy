@@ -18,7 +18,9 @@ import com.yizw.newhouselevy.Business.SysConfigBus;
 import com.yizw.newhouselevy.DAO.DatabaseHelper;
 import com.yizw.newhouselevy.Entity.Time;
 
-/*时限控制信息页面*/
+/*时限控制信息页面
+* author:yizw
+*/
 public class TimeControlInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
 	
 	public class KEY{	
@@ -72,7 +74,7 @@ public class TimeControlInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
 		
 		
 		webView.getSettings().setJavaScriptEnabled(true);  
-	        //加载需要显示的网页      webview.loadUrl("http://www.51cto.com/");  
+	        //加载需要显示的网页      webview.loadUrl("http://www.google.com/");  
 	        //设置Web视图  
 		Intent intent = this.getIntent();
  		String pid = intent.getStringExtra(KEY.in_id);
@@ -99,24 +101,6 @@ public class TimeControlInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
     }  
 	
 	private void operateIntent(){
-//		Intent intent = this.getIntent();
-//		String id = intent.getStringExtra(KEY.in_id);
-//	//	setEntityToUI(entity);
-//		in_id = id;
-//		if(StringHelper.isNullOrEmpty(id)){
-//			isAdd = true;
-//			entity = new Time();			
-//		}else{
-//			isAdd = false;
-//			entity = new Time(); 
-//			
-//			TimeInfoSearchAsyncTask task = new TimeInfoSearchAsyncTask(activity);
-//			task.execute(id);		
-//			
-//			//屏蔽保存 不能修改
-//			Button btn = (Button)findViewById(R.id.btn_title_right);
-//			btn.setVisibility(View.INVISIBLE);
-//		}
 		
 	}
 	
