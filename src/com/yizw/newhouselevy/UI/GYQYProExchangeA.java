@@ -105,7 +105,6 @@ public class GYQYProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
     //tab3
   //  text_area_x13_010,
     text_value_x25,
-    //text_cost_x107,text_cost_x108, text_cost_x109,
     //tab4  	
     text_structure_x7_4, text_value_x59,text_structure_x8_4,	
     text_value_x60,text_structure_x81_4,text_allowance_x61,

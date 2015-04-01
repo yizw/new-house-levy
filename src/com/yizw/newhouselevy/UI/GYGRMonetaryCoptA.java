@@ -87,7 +87,6 @@ import com.umeng.analytics.MobclickAgent;
     
     edit_value_x270,edit_value_x271,edit_value_x272,edit_value_x273,edit_value_x274,edit_value_x275;
     
-//    edit_area_x53_2, edit_area_x54_2,edit_area_x55_2,edit_area_x66_2, edit_area_x212_2,edit_area_x215_2,
     
     private TextView text_contractno_x185,text_maininquier_x218,text_levyname_x1,
 //  text_cardno_x2,text_linktel_x3,
@@ -221,8 +220,6 @@ import com.umeng.analytics.MobclickAgent;
 		text_contractno_x185 = (TextView) findViewById(R.id.text_contractno_x185);
 		text_maininquier_x218 = (TextView) findViewById(R.id.text_maininquier_x218);
 		text_levyname_x1 = (TextView) findViewById(R.id.text_levyname_x1);
-//		text_cardno_x2 = (TextView) findViewById(R.id.text_cardno_x2);
-//		text_linktel_x3 = (TextView) findViewById(R.id.text_linktel_x3);
 		text_levyaddress_x4 = (TextView) findViewById(R.id.text_levyaddress_x4);
 		text_housetotalarea_x5 = (TextView) findViewById(R.id.text_housetotalarea_x5);
 		text_purpose_x6 = (TextView) findViewById(R.id.text_purpose_x6);
@@ -299,13 +296,6 @@ import com.umeng.analytics.MobclickAgent;
 
 		// tab3
 		edit_percent_x32_1 = (EditText) findViewById(R.id.edit_percent_x32_1);
-//		edit_percent_x32_2 = (EditText) findViewById(R.id.edit_percent_x32_2);
-//		edit_percent_x32_3 = (EditText) findViewById(R.id.edit_percent_x32_3);
-//		edit_percent_x32_4 = (EditText) findViewById(R.id.edit_percent_x32_4);
-//		edit_percent_x32_5 = (EditText) findViewById(R.id.edit_percent_x32_5);
-//		edit_percent_x32_6 = (EditText) findViewById(R.id.edit_percent_x32_6);
-		
-		
 		edit_cost_x39 = (EditText) findViewById(R.id.edit_cost_x39);
 		edit_cost_x40 = (EditText) findViewById(R.id.edit_cost_x40);
 		edit_cost_x49 = (EditText) findViewById(R.id.edit_cost_x49);
@@ -363,13 +353,6 @@ import com.umeng.analytics.MobclickAgent;
 		edit_area_x215_1 = (EditText) findViewById(R.id.edit_area_x215_1);
 		edit_value_x216 = (EditText) findViewById(R.id.edit_value_x216);
 
-//		edit_area_x53_2 = (EditText) findViewById(R.id.edit_area_x53_2);
-//		edit_area_x54_2 = (EditText) findViewById(R.id.edit_area_x54_2);
-//		edit_area_x55_2 = (EditText) findViewById(R.id.edit_area_x55_2);
-//		edit_area_x66_2 = (EditText) findViewById(R.id.edit_area_x66_2);
-//		edit_area_x212_2 = (EditText) findViewById(R.id.edit_area_x212_2);
-//		edit_area_x215_2 = (EditText) findViewById(R.id.edit_area_x215_2);
-		
 		
 		edit_value_x270 = (EditText) findViewById(R.id.edit_value_x270);
 		edit_value_x271 = (EditText) findViewById(R.id.edit_value_x271);
@@ -906,28 +889,6 @@ import com.umeng.analytics.MobclickAgent;
 			}
 			
 			
-//			void Onclick_btn_title_right(){
-//				try {
-//					getEntity();
-//					String result = HOU_GYGR_MONETARY_Bus.check(entity);
-//					if(!result.equals("")){
-//						DialogHelper.showConfirm(activity, result);
-//						return;
-//					}
-//					HOU_GYGR_MONETARY_Bus bus = new HOU_GYGR_MONETARY_Bus(getHelper());
-//					bus.create(entity);
-//
-//					Toast.makeText(activity, "保存成功", Toast.LENGTH_LONG).show();
-//					activity.setResult(Activity.RESULT_OK, null);
-//					activity.finish();
-//				}catch (MyException e) {
-//					ExceptionHelper.Operate(e, true, activity);
-//				}catch (Exception e) {
-//					MyException myE = new MyException("保存出错", e.getMessage(),e.getStackTrace());
-//					ExceptionHelper.Operate(myE, true, activity);
-//				}
-//			}
-				 
 			
 			void Onclick_btn_title_right(){	
 				getEntity();

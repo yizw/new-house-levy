@@ -2562,7 +2562,6 @@ public class GYGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 //		}
 		
 		
-		
 		void showTempSaveDialog(String message) {
 			AlertDialog.Builder builder = new AlertDialog.Builder(activity);
 			builder.setTitle("国有个人产权算单提交或暂存");
@@ -2634,10 +2633,7 @@ public class GYGRProExchangeA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 						 
 				Dialog dialog = builder.create();
 				dialog.show();
-            
 			}
-			
-			
 			
 		}
 		
