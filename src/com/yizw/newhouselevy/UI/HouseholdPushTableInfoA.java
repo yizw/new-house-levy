@@ -27,6 +27,7 @@ import com.yizw.newhouselevy.Entity.HOU_PUSH_INFO;
 
 /*
  * 分户推进表每一个item内容信息填写页面
+ * author:yizw
 */
 public class HouseholdPushTableInfoA extends OrmLiteBaseActivity<DatabaseHelper> {
 	public class KEY{	

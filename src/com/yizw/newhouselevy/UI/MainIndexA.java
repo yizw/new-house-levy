@@ -45,8 +45,6 @@ public class MainIndexA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 	
     private TextView name;
     private EditText edit_realname,edit_linktel,edit_address,edit_password,edit_password2;
-   
- //   private Button btn_title_right;
 	
 	public boolean autoUpdate = false;
 	public boolean autoSync = false;
@@ -160,13 +158,10 @@ public class MainIndexA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 		edit_password = (EditText) findViewById(R.id.edit_password);
 		edit_password2 = (EditText) findViewById(R.id.edit_password2);
 		
-	//	bus = new TestBus(activity);
-		
 	}
 	
 	private void initLayout(int id) {
 		LinearLayout x1= (LinearLayout)findViewById(id);
-	//	x1.getBackground().setAlpha(180);
 		x1.setOnClickListener(new OnClick());
 	}
 	
@@ -345,7 +340,7 @@ public class MainIndexA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 				   MainUserInfoSaveAsyncTask task = new MainUserInfoSaveAsyncTask(activity);
 				   task.execute(""); 
  				 //    deleteDate();
-//				      activity.finish();
+                 //    activity.finish();
 					}
 				})
 				.setNegativeButton("取消", new OnClickListener() {
@@ -418,12 +413,6 @@ public class MainIndexA extends OrmLiteBaseTabActivity<DatabaseHelper>{
 		}
 		return false;
 	}
-	
-	
-	
-	
-	
-	
 	
 	
 }

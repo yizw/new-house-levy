@@ -10,7 +10,9 @@ import com.cogent.core.util.SystemInfo;
 import com.example.newhouselevy.R;
 import com.yizw.newhouselevy.Business.PublicBus;
 
-/*关于软件*/
+/*关于软件
+ * author:yizw
+ * */
 public class AboutA extends Activity {
 	private Activity activity;
 	

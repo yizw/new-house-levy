@@ -66,12 +66,10 @@ public class JTQYMonetaryCoptA extends OrmLiteBaseTabActivity<DatabaseHelper>{
     private EditText 
     //tab1
     edit_cardno_x2,
-    //edit_linktel_x3,
     edit_area_x9,edit_area_x10, 
     edit_area_x184,edit_area_x188,edit_area_x202,edit_area_x203,  
     edit_value_x14_1,edit_value_x15_1,edit_value_x16_1,    
     edit_value_x86_1,edit_value_x204_1,edit_value_x205_1,
-   // edit_x600,
         
     //tab2
     edit_area_x77,edit_area_x79,edit_area_x82,edit_area_x85,edit_area_x221,edit_area_x222,
@@ -102,7 +100,6 @@ public class JTQYMonetaryCoptA extends OrmLiteBaseTabActivity<DatabaseHelper>{
     	
     private TextView 	
      //tab1
-    // text_cardno_x2,
      text_linktel_x3,
      text_contractno_x185,text_maininquier_x218,text_levyname_x1,text_legalrepresentative_x186,
      text_levyaddress_x4,text_housetotalarea_x5,text_purpose_x6,
@@ -120,9 +117,7 @@ public class JTQYMonetaryCoptA extends OrmLiteBaseTabActivity<DatabaseHelper>{
      text_value_x86_2,text_value_x65,text_structure_x200_3,text_value_x204_2,text_value_x208,
      text_structure_x201_3,text_value_x205_2,text_value_x209,
    //3月18日修改，搬迁费面积X13_010”调整为一个独立的新的逻辑值“X1000”，同时将搬迁费面积的逻辑值调整为手动录入
-    // text_area_x13_1,
      text_cost_x25,text_area_x13_2,text_cost_x30,
-     //text_cost_x107,text_cost_x108,text_cost_x109,
      
      //tab3		
      text_structure_x7_4,text_value_x14_3,text_value_x33,
@@ -133,7 +128,6 @@ public class JTQYMonetaryCoptA extends OrmLiteBaseTabActivity<DatabaseHelper>{
      text_structure_x201_4,text_value_x205_3,text_value_x211,
      
      //3月18日新需求，将集体企业货币  X52_111 删除  （我隐藏了未删除，万一到时需求又变了呢。。)
-  //   text_cost_x52,
      
      text_area_x77,text_area_x79,text_area_x82,text_area_x85,text_area_x221,text_area_x222,
      text_percent_x111_2,text_percent_x111_3,

@@ -22,7 +22,10 @@ import com.yizw.newhouselevy.Business.PublicBus;
 import com.yizw.newhouselevy.DAO.DatabaseHelper;
 import com.yizw.newhouselevy.Entity.PageDomain;
 
-/**房源--征收项目**/
+/*
+ * 房源--征收项目
+ * author:yizw
+ */
 public class HouseProListA extends OrmLiteBaseActivity<DatabaseHelper>{
 	
 	public class KEY{	
@@ -165,9 +168,6 @@ public class HouseProListA extends OrmLiteBaseActivity<DatabaseHelper>{
 						//点击的是数据项
 						TextView txt_id = (TextView) view.findViewById(R.id.txt_id);
 						String projectid = txt_id.getText().toString();	
-						
-//						TextView p_id = (TextView) view.findViewById(R.id.p_id);
-//						String pid = p_id.getText().toString();	
 						
 						Intent intent = new Intent(activity,HouseNameListA.class);						
 						intent.putExtra(HouseNameListA.KEY.in_id, projectid);
