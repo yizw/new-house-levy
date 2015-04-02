@@ -30,13 +30,15 @@ import com.yizw.newhouselevy.DAO.DatabaseHelper;
 import com.yizw.newhouselevy.Entity.HouseConfirm;
 
 
-/** 集体企业--房屋调查确认表（集体企业货币确认表和集体企业产权确认表一致） */
+/** 集体企业--房屋调查确认表（集体企业货币确认表和集体企业产权确认表一致） 
+ * author:yizw
+ * */
 public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 
 	public class KEY {
 		/*确认表id*/
 		public static final String in_id = "in_id";
-		/** 补偿计算单类型 */
+		/*补偿计算单类型 */
 		public static final String in_type = "in_type";
 		public static final String cid = "cid";
 		public static final String hid = "hid";
@@ -55,7 +57,6 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 
 	private EditText edit_houselocation_x4, edit_houseowner_x1, edit_licenseno,
 			edit_authority, edit_operatperiod, edit_busaddress,
-		//	edit_enterprisename_x1, 
 			edit_enterprisenature,
 			edit_representative_x186, edit_tellink_x3, edit_paysecurity,
 			edit_taxproof, edit_apprprocedure, edit_structure_x7_y,
@@ -71,7 +72,6 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 			edit_prono, edit_pronature, edit_prouse, edit_proarea,
 			edit_approveno, edit_approvedepart, edit_approvearea,
 			edit_specsituation, edit_closesituation, edit_remark,
-		//	edit_maininquirer_x218,
 			
 			edit_isoperat, edit_islegaluse, edit_ismortgage, edit_isclose;
 
@@ -128,7 +128,6 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 		edit_authority = (EditText) findViewById(R.id.edit_authority);
 		edit_operatperiod = (EditText) findViewById(R.id.edit_operatperiod);
 		edit_busaddress = (EditText) findViewById(R.id.edit_busaddress);
-		//edit_enterprisename_x1 = (EditText) findViewById(R.id.edit_enterprisename_x1);
 		
 		text_enterprisename_x1 = (TextView) findViewById(R.id.text_enterprisename_x1);
 		
@@ -242,7 +241,6 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 		edit_authority.setText(entity.getC27());
 		edit_operatperiod.setText(entity.getC17());
 		edit_busaddress.setText(entity.getC16());
-	//	edit_enterprisename_x1.setText(entity.getX1());
 		text_enterprisename_x1.setText(entity.getX1());
 		
 		edit_enterprisenature.setText(entity.getC28());
@@ -292,7 +290,6 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 		edit_specsituation.setText(entity.getC23());
 		edit_closesituation.setText(entity.getC25());
 		edit_remark.setText(entity.getC26());
-	//	edit_maininquirer_x218.setText(entity.getX218());
 		
 		text_maininquirer_x218.setText(LoginBus.getLogin(this).getREALNAME());
 		
@@ -309,13 +306,9 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 	private HouseConfirm getEntity() {
 		if (isAdd) {
 			entity.setCreator(LoginBus.getLogin(this).getREALNAME());
-			// entity.setCREDATE(new Date());
 		}
 
-//		 entity.setUSERNAME(LoginBus.getLogin(this).getUSERNAME());
-//		 entity.setSTATUS("0");
 		 entity.setModifier(LoginBus.getLogin(this).getREALNAME());
-//		 entity.setModifydate(new Date());
 
 		entity.setX4(edit_houselocation_x4.getText().toString());
 		entity.setX1(edit_houseowner_x1.getText().toString());
@@ -323,7 +316,6 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 		entity.setC27(edit_authority.getText().toString());
 		entity.setC17(edit_operatperiod.getText().toString());
 		entity.setC16(edit_busaddress.getText().toString());
-	//	entity.setX1(edit_enterprisename_x1.getText().toString());
 		entity.setC28(edit_enterprisenature.getText().toString());
 		entity.setX186(edit_representative_x186.getText().toString());
 		entity.setX3(edit_tellink_x3.getText().toString());
@@ -365,7 +357,6 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 		entity.setC23(edit_specsituation.getText().toString());
 		entity.setC25(edit_closesituation.getText().toString());
 		entity.setC26(edit_remark.getText().toString());
-	//	entity.setX218(edit_maininquirer_x218.getText().toString());
 		entity.setX218(LoginBus.getLogin(this).getREALNAME());
 		
 		entity.setC33(edit_isoperat.getText().toString());
@@ -384,8 +375,6 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 			return Double.parseDouble(text);
 		}
 	}
-	
-	
 	
 
 	// @Override
@@ -461,32 +450,6 @@ public class HouJTQYConfirmTable extends OrmLiteBaseActivity<DatabaseHelper> {
 			return true;
 		}
 		
-		
-		
-		
-//		void Onclick_btn_title_right() {
-//			try {
-//				getEntity();
-//				String result = CONFIRM_JTQY_PRO_MON_Bus.check(entity);
-//				if (!result.equals("")) {
-//					DialogHelper.showConfirm(activity, result);
-//					return;
-//				}
-//				CONFIRM_JTQY_PRO_MON_Bus bus = new CONFIRM_JTQY_PRO_MON_Bus(
-//						getHelper());
-//				bus.create(entity);
-//
-//				Toast.makeText(activity, "保存成功", Toast.LENGTH_LONG).show();
-//				activity.setResult(Activity.RESULT_OK, null);
-//				activity.finish();
-//			} catch (MyException e) {
-//				ExceptionHelper.Operate(e, true, activity);
-//			} catch (Exception e) {
-//				MyException myE = new MyException("保存出错", e.getMessage(),
-//						e.getStackTrace());
-//				ExceptionHelper.Operate(myE, true, activity);
-//			}
-//		}
 		
 
 		void Onclick_btn_title_right(){	
