@@ -64,7 +64,6 @@ public class DataBaseInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
 		
 		title = (TextView) findViewById(R.id.title);
 		
-	//	content = (TextView) findViewById(R.id.content);
 		webView = (WebView) findViewById(R.id.content);
 		 
 		createddate = (TextView) findViewById(R.id.createddate);
@@ -78,7 +77,6 @@ public class DataBaseInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
 	private void operateIntent(){
 		Intent intent = this.getIntent();
 		String id = intent.getStringExtra(KEY.in_id);
-	//	setEntityToUI(entity);
 		in_id = id;
 		if(StringHelper.isNullOrEmpty(id)){
 			isAdd = true;
@@ -133,7 +131,6 @@ public class DataBaseInfoA extends OrmLiteBaseActivity<DatabaseHelper>{
 		void Onclick_btn_title_right() {
 
 		}
-		
 		
 	}
 }
